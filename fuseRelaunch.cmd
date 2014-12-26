@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Diego/Desktop/Ascensor/tb_clk_divider_isim_beh.exe" -prj "C:/Users/Diego/Desktop/Ascensor/tb_clk_divider_beh.prj" "work.tb_clk_divider" 
+-intstyle "ise" -incremental -o "C:/Users/Daniel/Desktop/Proyecto_SED/tb_decodificador_isim_beh.exe" -prj "C:/Users/Daniel/Desktop/Proyecto_SED/tb_decodificador_beh.prj" "work.tb_decodificador" 

@@ -1,1 +1,3 @@
 vhdtdtfi -prj Ascensor -o C:/Users/sed/Desktop/Ascensor/Ascensor/decodificador.vhi -module decodificador -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Decodificador.vhd 
+vhdtdtfi -lib work Decodificador.vhd -prj Ascensor -o decodificador.spl -module decodificador -template C:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 decodificador.spl C:/Users/Daniel/Desktop/Proyecto_SED/decodificador.sym 

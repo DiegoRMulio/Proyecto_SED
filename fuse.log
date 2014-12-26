@@ -1,20 +1,19 @@
-Running: D:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Diego/Desktop/Ascensor/tb_clk_divider_isim_beh.exe -prj C:/Users/Diego/Desktop/Ascensor/tb_clk_divider_beh.prj work.tb_clk_divider 
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Daniel/Desktop/Proyecto_SED/tb_decodificador_isim_beh.exe -prj C:/Users/Daniel/Desktop/Proyecto_SED/tb_decodificador_beh.prj work.tb_decodificador 
 ISim P.15xf (signature 0xc3576ebc)
-Number of CPUs detected in this system: 8
-Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/Diego/Desktop/Ascensor/clk_divider.vhd" into library work
-Parsing VHDL file "C:/Users/Diego/Desktop/Ascensor/tb_clk_divider.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/Decodificador.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/tb_decodificador.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package numeric_std
-Compiling architecture behavioral of entity clk_divider [clk_divider_default]
-Compiling architecture behavior of entity tb_clk_divider
+Compiling architecture dataflow of entity decodificador [decodificador_default]
+Compiling architecture behavior of entity tb_decodificador
 Time Resolution for simulation is 1ps.
-WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: El sistema no puede encontrar la ruta especificada, "isim\tb_clk_divider_isim_beh.exe.sim\libPortability.dll".
-Compiled 6 VHDL Units
-Built simulation executable C:/Users/Diego/Desktop/Ascensor/tb_clk_divider_isim_beh.exe
-Fuse Memory Usage: 33028 KB
-Fuse CPU Usage: 1765 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/Daniel/Desktop/Proyecto_SED/tb_decodificador_isim_beh.exe
+Fuse Memory Usage: 28212 KB
+Fuse CPU Usage: 499 ms
