@@ -5,11 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"C:/Users/Daniel/Desktop/Proyecto_SED/tb_MaquinaDeEstados.vhd" Line 21: Formal port &lt;<arg fmt="%s" index="1">Piso_Actual</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">MaquinaDeEstados</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">MaquinaDeEstados</arg>&gt; to its component declaration and its instantion to detect the mismatch.
-</msg>
-
-<msg type="error" file="Simulator" num="777" delta="unknown" >Static elaboration of top level VHDL design unit <arg fmt="%s" index="1">tb_maquinadeestados</arg> in library <arg fmt="%s" index="2">work</arg> failed
-</msg>
-
 </messages>
 

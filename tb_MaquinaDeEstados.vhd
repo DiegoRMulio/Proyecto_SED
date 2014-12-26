@@ -1,10 +1,6 @@
---------------------------------------------------------------------------------
--- Company: 
--- Engineer:
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-
  
 ENTITY tb_MaquinaDeEstados IS
 END tb_MaquinaDeEstados;
@@ -18,7 +14,8 @@ ARCHITECTURE behavior OF tb_MaquinaDeEstados IS
          clk_Maq : IN  std_logic;
          reset : IN  std_logic;
          Piso_Deseado : IN  std_logic_vector(1 downto 0);
-         Piso_Actual : OUT  std_logic_vector(1 downto 0);
+         Piso_Actual_in : IN  std_logic_vector(1 downto 0);
+         Piso_Actual_out : OUT  std_logic_vector(1 downto 0);
          Puerta : OUT  std_logic;
          Motor : OUT  std_logic_vector(1 downto 0)
         );
@@ -29,9 +26,10 @@ ARCHITECTURE behavior OF tb_MaquinaDeEstados IS
    signal clk_Maq : std_logic := '0';
    signal reset : std_logic := '0';
    signal Piso_Deseado : std_logic_vector(1 downto 0) := (others => '0');
+   signal Piso_Actual_in : std_logic_vector(1 downto 0) := (others => '0');
 
  	--Outputs
-   signal Piso_Actual : std_logic_vector(1 downto 0);
+   signal Piso_Actual_out : std_logic_vector(1 downto 0);
    signal Puerta : std_logic;
    signal Motor : std_logic_vector(1 downto 0);
 
@@ -45,7 +43,8 @@ BEGIN
           clk_Maq => clk_Maq,
           reset => reset,
           Piso_Deseado => Piso_Deseado,
-          Piso_Actual => Piso_Actual,
+          Piso_Actual_in => Piso_Actual_in,
+          Piso_Actual_out => Piso_Actual_out,
           Puerta => Puerta,
           Motor => Motor
         );
@@ -63,19 +62,19 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-		reset<= '1';
-      wait for clk_Maq_period/2;	
-		reset<= '0';
-		Piso_Deseado<="10";
-		wait for clk_Maq_period*2;	
---			Piso_Deseado<="01";
---		wait for clk_Maq_period*2;
---			Piso_Deseado<="10";
---		wait for clk_Maq_period*2;
---			Piso_Deseado<="11";
---		wait for clk_Maq_period*2;
---		
---      wait for clk_Maq_period*10;
+		Piso_Deseado<="11";
+		Piso_Actual_in<="00";
+      wait for 10 ns;	
+		Piso_Deseado<="11";
+		Piso_Actual_in<="01";
+		wait for 10 ns;
+		Piso_Deseado<="11";
+		Piso_Actual_in<="10";
+		wait for 10 ns;
+		Piso_Deseado<="11";
+		Piso_Actual_in<="11";
+		wait for 10 ns;
+
 
       -- insert stimulus here 
 

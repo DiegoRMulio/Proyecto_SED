@@ -30,7 +30,7 @@ begin
 			Q_bus <= S0;
 		else 
 			Q_bus <= D_bus;
-			end if;
+		end if;
 		end if;
 end process;
 ----LOGICA DEL ESTADO SIGUIENTE---
