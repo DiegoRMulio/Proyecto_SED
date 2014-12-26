@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-12-24T09:07:08</DateModified>
+  <DateModified>2014-12-26T19:32:18</DateModified>
   <ModuleName>Ascensor</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Diego/Desktop/Ascensor/iseconfig/Ascensor.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Diego/Desktop/Ascensor\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Daniel/Desktop/Proyecto_SED/iseconfig/Ascensor.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Daniel/Desktop/Proyecto_SED\</ImplementationReportsDirectory>
   <DateInitialized>2014-11-24T17:24:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

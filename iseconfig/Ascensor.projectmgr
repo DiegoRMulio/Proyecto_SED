@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Ascensor - Behavioral (C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Ascensor.vhd)</SelectedItem>
+         <SelectedItem>Ascensor - Behavioral (C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000020e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000020e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Ascensor - Behavioral (C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Ascensor.vhd)</CurrentItem>
+      <CurrentItem>Ascensor - Behavioral (C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -78,13 +78,13 @@
          <ClosedNode>/tb_clk_divider - behavior C:|Users|sed|Desktop|Ascensor|Ascensor|tb_clk_divider.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_clk_divider - behavior (C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/tb_clk_divider.vhd)</SelectedItem>
+         <SelectedItem>uut - codificador - dataflow (C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000020e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000020e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>tb_clk_divider - behavior (C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/tb_clk_divider.vhd)</CurrentItem>
+      <CurrentItem>uut - codificador - dataflow (C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -105,12 +105,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>
