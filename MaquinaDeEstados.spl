@@ -1,0 +1,10 @@
+[Inputs]
+clk_Maq
+reset
+=Piso_Deseado[1:0]=
+=Piso_Actual_in[1:0]=
+[Outputs]
+Puerta
+=Piso_Actual_out[1:0]=
+=Motor[1:0]=
+[BiDir]

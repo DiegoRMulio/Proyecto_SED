@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file MaquinaDeEstados.vhd -- 18:22:50 11/27/2014
+-- VHDL Instantiation Created from source file MaquinaDeEstados.vhd -- 22:22:59 12/26/2014
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types
@@ -10,8 +10,9 @@
 	PORT(
 		clk_Maq : IN std_logic;
 		reset : IN std_logic;
-		Piso_Deseado : IN std_logic_vector(4 downto 1);          
-		Piso_Actual : OUT std_logic_vector(1 downto 0);
+		Piso_Deseado : IN std_logic_vector(1 downto 0);
+		Piso_Actual_in : IN std_logic_vector(1 downto 0);          
+		Piso_Actual_out : OUT std_logic_vector(1 downto 0);
 		Puerta : OUT std_logic;
 		Motor : OUT std_logic_vector(1 downto 0)
 		);
@@ -21,7 +22,8 @@
 		clk_Maq => ,
 		reset => ,
 		Piso_Deseado => ,
-		Piso_Actual => ,
+		Piso_Actual_in => ,
+		Piso_Actual_out => ,
 		Puerta => ,
 		Motor => 
 	);

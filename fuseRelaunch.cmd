@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Daniel/Desktop/Proyecto_SED/tb_decodificador_isim_beh.exe" -prj "C:/Users/Daniel/Desktop/Proyecto_SED/tb_decodificador_beh.prj" "work.tb_decodificador" 
+-intstyle "ise" -incremental -o "C:/Users/Daniel/Desktop/Proyecto_SED/tb_MaquinaDeEstados_isim_beh.exe" -prj "C:/Users/Daniel/Desktop/Proyecto_SED/tb_MaquinaDeEstados_beh.prj" "work.tb_MaquinaDeEstados" 

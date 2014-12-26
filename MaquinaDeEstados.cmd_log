@@ -1,1 +1,5 @@
 vhdtdtfi -prj Ascensor -o C:/Users/sed/Desktop/Ascensor/Ascensor/MaquinaDeEstados.vhi -module MaquinaDeEstados -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work MaquinaDeEstados.vhd 
+vhdtdtfi -lib work MaquinaDeEstados.vhd -prj Ascensor -o MaquinaDeEstados.spl -module MaquinaDeEstados -template C:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 MaquinaDeEstados.spl C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.sym 
+vhdtdtfi -prj Ascensor -o C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.vhi -module MaquinaDeEstados -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work MaquinaDeEstados.vhd 
+vhdtdtfi -prj Ascensor -o C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.vhi -module MaquinaDeEstados -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work MaquinaDeEstados.vhd 

@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: Ascensor.prj
 
@@ -179,15 +179,13 @@ Unit <codificador> synthesized.
 
 Synthesizing Unit <MaquinaDeEstados>.
     Related source file is "C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.vhd".
-WARNING:Xst:647 - Input <clk_Maq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:653 - Signal <clk> is used but never assigned. This sourceless signal will be automatically connected to value 0.
     Found finite state machine <FSM_0> for signal <Q_bus>.
     -----------------------------------------------------------------------
-    | States             | 4                                              |
-    | Transitions        | 6                                              |
-    | Inputs             | 2                                              |
-    | Outputs            | 4                                              |
-    | Clock              | clk                       (rising_edge)        |
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk_Maq                   (rising_edge)        |
     | Reset              | reset                     (positive)           |
     | Reset type         | synchronous                                    |
     | Reset State        | s0                                             |
@@ -195,17 +193,14 @@ WARNING:Xst:653 - Signal <clk> is used but never assigned. This sourceless signa
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-WARNING:Xst:737 - Found 2-bit latch for signal <Piso_Actual_i>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 3-bit latch for signal <salidas>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-    Found 2-bit addsub for signal <Piso_Actual_i$addsub0000>.
-    Found 2-bit comparator greater for signal <Q_bus$cmp_gt0000> created at line 48.
-    Found 2-bit comparator less for signal <Q_bus$cmp_lt0000> created at line 47.
+    Found 2-bit comparator equal for signal <Q_bus$cmp_eq0000> created at line 51.
+    Found 2-bit comparator greater for signal <Q_bus$cmp_gt0000> created at line 49.
+    Found 2-bit comparator less for signal <Q_bus$cmp_lt0000> created at line 48.
     Summary:
 	inferred   1 Finite State Machine(s).
-	inferred   1 Adder/Subtractor(s).
-	inferred   2 Comparator(s).
+	inferred   3 Comparator(s).
 Unit <MaquinaDeEstados> synthesized.
 
 
@@ -216,7 +211,6 @@ WARNING:Xst:1780 - Signal <Q_bus> is never used or assigned. This unconnected si
 WARNING:Xst:1780 - Signal <D_bus> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <Ascensor> synthesized.
 
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 HDL Synthesis Report
@@ -224,16 +218,14 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  4x7-bit ROM                                           : 1
-# Adders/Subtractors                                   : 1
- 2-bit addsub                                          : 1
 # Counters                                             : 1
  32-bit up counter                                     : 1
 # Registers                                            : 1
  1-bit register                                        : 1
-# Latches                                              : 2
- 2-bit latch                                           : 1
+# Latches                                              : 1
  3-bit latch                                           : 1
-# Comparators                                          : 2
+# Comparators                                          : 3
+ 2-bit comparator equal                                : 1
  2-bit comparator greater                              : 1
  2-bit comparator less                                 : 1
 
@@ -244,28 +236,16 @@ Macro Statistics
 =========================================================================
 
 Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <Inst_MaquinaDeEstados/Q_bus/FSM> on signal <Q_bus[1:4]> with one-hot encoding.
+Optimizing FSM <Inst_MaquinaDeEstados/Q_bus/FSM> on signal <Q_bus[1:5]> with one-hot encoding.
 -------------------
  State | Encoding
 -------------------
- s0    | 0001
- s1    | 0010
- s2    | 0100
- s3    | 1000
+ s0    | 00001
+ s1    | 00010
+ s2    | 00100
+ s3    | 01000
+ s4    | 10000
 -------------------
-WARNING:Xst:1290 - Hierarchical block <Inst_clk_divider> is unconnected in block <Ascensor>.
-   It will be removed from the design.
-WARNING:Xst:1293 - FF/Latch <FFd1> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <FFd2> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <FFd3> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 1 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1290 - Hierarchical block <Inst_codificador> is unconnected in block <Ascensor>.
-   It will be removed from the design.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -274,16 +254,14 @@ Macro Statistics
 # FSMs                                                 : 1
 # ROMs                                                 : 1
  4x7-bit ROM                                           : 1
-# Adders/Subtractors                                   : 1
- 2-bit addsub                                          : 1
 # Counters                                             : 1
  32-bit up counter                                     : 1
 # Registers                                            : 1
  Flip-Flops                                            : 1
-# Latches                                              : 2
- 2-bit latch                                           : 1
+# Latches                                              : 1
  3-bit latch                                           : 1
-# Comparators                                          : 2
+# Comparators                                          : 3
+ 2-bit comparator equal                                : 1
  2-bit comparator greater                              : 1
  2-bit comparator less                                 : 1
 
@@ -292,61 +270,22 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <Piso_Actual_i_1> (without init value) has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Q_bus_FSM_FFd1> has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Q_bus_FSM_FFd2> has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Q_bus_FSM_FFd3> has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Q_bus_FSM_FFd4> has a constant value of 1 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <salidas_0> (without init value) has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <salidas_1> (without init value) has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <salidas_2> (without init value) has a constant value of 1 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1294 - Latch <Piso_Actual_i_0> is equivalent to a wire in block <MaquinaDeEstados>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/temporal> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_0> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_1> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_2> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_3> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_4> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_5> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_6> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_7> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_8> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_9> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_10> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_11> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_12> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_13> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_14> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_15> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_16> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_17> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_18> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_19> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_20> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_21> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_22> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_23> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_24> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_25> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_26> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_27> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_28> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_29> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_30> of sequential type is unconnected in block <Ascensor>.
-WARNING:Xst:2677 - Node <Inst_clk_divider/counter_31> of sequential type is unconnected in block <Ascensor>.
 
 Optimizing unit <Ascensor> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Ascensor, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Ascensor, actual ratio is 2.
 
 Final Macro Processing ...
 
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+
 =========================================================================
 
 =========================================================================
@@ -371,13 +310,29 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 16
+# IOs                              : 20
 
 Cell Usage :
-# BELS                             : 2
+# BELS                             : 165
 #      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 31
+#      LUT2                        : 33
+#      LUT4                        : 22
+#      MUXCY                       : 39
+#      MUXF5                       : 3
 #      VCC                         : 1
-# IO Buffers                       : 10
+#      XORCY                       : 32
+# FlipFlops/Latches                : 41
+#      FDC                         : 32
+#      FDCE                        : 1
+#      FDR                         : 4
+#      FDS                         : 1
+#      LD_1                        : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 9
 #      OBUF                        : 10
 =========================================================================
 
@@ -386,9 +341,13 @@ Device utilization summary:
 
 Selected Device : 3s200ft256-5 
 
- Number of Slices:                        0  out of   1920     0%  
- Number of IOs:                          16
- Number of bonded IOBs:                  10  out of    173     5%  
+ Number of Slices:                       48  out of   1920     2%  
+ Number of Slice Flip Flops:             38  out of   3840     0%  
+ Number of 4 input LUTs:                 89  out of   3840     2%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    173    11%  
+    IOB Flip Flops:                       3
+ Number of GCLKs:                         1  out of      8    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -408,36 +367,183 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+------------------------------------+-------------------------------------------+-------+
+Clock Signal                        | Clock buffer(FF name)                     | Load  |
+------------------------------------+-------------------------------------------+-------+
+clk                                 | BUFGP                                     | 33    |
+Inst_MaquinaDeEstados/Q_bus_FSM_FFd4| NONE(Inst_MaquinaDeEstados/salidas_2)     | 3     |
+Inst_clk_divider/temporal           | NONE(Inst_MaquinaDeEstados/Q_bus_FSM_FFd3)| 5     |
+------------------------------------+-------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-No asynchronous control signals found in this design
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 33    |
+-----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
+   Minimum period: 6.482ns (Maximum Frequency: 154.278MHz)
+   Minimum input arrival time before clock: 4.512ns
+   Maximum output required time after clock: 6.141ns
+   Maximum combinational path delay: 8.157ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.482ns (frequency: 154.278MHz)
+  Total number of paths / destination ports: 1585 / 34
+-------------------------------------------------------------------------
+Delay:               6.482ns (Levels of Logic = 33)
+  Source:            Inst_clk_divider/counter_1 (FF)
+  Destination:       Inst_clk_divider/counter_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Inst_clk_divider/counter_1 to Inst_clk_divider/counter_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  Inst_clk_divider/counter_1 (Inst_clk_divider/counter_1)
+     LUT1:I0->O            1   0.479   0.000  Inst_clk_divider/Mcount_counter_cy<1>_rt (Inst_clk_divider/Mcount_counter_cy<1>_rt)
+     MUXCY:S->O            1   0.435   0.000  Inst_clk_divider/Mcount_counter_cy<1> (Inst_clk_divider/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<2> (Inst_clk_divider/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<3> (Inst_clk_divider/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<4> (Inst_clk_divider/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<5> (Inst_clk_divider/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<6> (Inst_clk_divider/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<7> (Inst_clk_divider/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<8> (Inst_clk_divider/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<9> (Inst_clk_divider/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<10> (Inst_clk_divider/Mcount_counter_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<11> (Inst_clk_divider/Mcount_counter_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<12> (Inst_clk_divider/Mcount_counter_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<13> (Inst_clk_divider/Mcount_counter_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<14> (Inst_clk_divider/Mcount_counter_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<15> (Inst_clk_divider/Mcount_counter_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<16> (Inst_clk_divider/Mcount_counter_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<17> (Inst_clk_divider/Mcount_counter_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<18> (Inst_clk_divider/Mcount_counter_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<19> (Inst_clk_divider/Mcount_counter_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<20> (Inst_clk_divider/Mcount_counter_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<21> (Inst_clk_divider/Mcount_counter_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<22> (Inst_clk_divider/Mcount_counter_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<23> (Inst_clk_divider/Mcount_counter_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<24> (Inst_clk_divider/Mcount_counter_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<25> (Inst_clk_divider/Mcount_counter_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<26> (Inst_clk_divider/Mcount_counter_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<27> (Inst_clk_divider/Mcount_counter_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<28> (Inst_clk_divider/Mcount_counter_cy<28>)
+     MUXCY:CI->O           1   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<29> (Inst_clk_divider/Mcount_counter_cy<29>)
+     MUXCY:CI->O           0   0.056   0.000  Inst_clk_divider/Mcount_counter_cy<30> (Inst_clk_divider/Mcount_counter_cy<30>)
+     XORCY:CI->O           1   0.786   0.851  Inst_clk_divider/Mcount_counter_xor<31> (Result<31>)
+     LUT2:I1->O            1   0.479   0.000  Inst_clk_divider/Mcount_counter_eqn_311 (Inst_clk_divider/Mcount_counter_eqn_31)
+     FDC:D                     0.176          Inst_clk_divider/counter_31
+    ----------------------------------------
+    Total                      6.482ns (4.591ns logic, 1.891ns route)
+                                       (70.8% logic, 29.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_clk_divider/temporal'
+  Clock period: 2.926ns (frequency: 341.793MHz)
+  Total number of paths / destination ports: 7 / 4
+-------------------------------------------------------------------------
+Delay:               2.926ns (Levels of Logic = 1)
+  Source:            Inst_MaquinaDeEstados/Q_bus_FSM_FFd4 (FF)
+  Destination:       Inst_MaquinaDeEstados/Q_bus_FSM_FFd4 (FF)
+  Source Clock:      Inst_clk_divider/temporal rising
+  Destination Clock: Inst_clk_divider/temporal rising
+
+  Data Path: Inst_MaquinaDeEstados/Q_bus_FSM_FFd4 to Inst_MaquinaDeEstados/Q_bus_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             10   0.626   0.964  Inst_MaquinaDeEstados/Q_bus_FSM_FFd4 (Inst_MaquinaDeEstados/Q_bus_FSM_FFd4)
+     INV:I->O              1   0.479   0.681  Inst_MaquinaDeEstados/Q_bus_FSM_FFd4-In1_INV_0 (Inst_MaquinaDeEstados/Q_bus_FSM_FFd4-In)
+     FDR:D                     0.176          Inst_MaquinaDeEstados/Q_bus_FSM_FFd4
+    ----------------------------------------
+    Total                      2.926ns (1.281ns logic, 1.645ns route)
+                                       (43.8% logic, 56.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_clk_divider/temporal'
+  Total number of paths / destination ports: 89 / 8
+-------------------------------------------------------------------------
+Offset:              4.512ns (Levels of Logic = 4)
+  Source:            Piso_Actual_Sensor<1> (PAD)
+  Destination:       Inst_MaquinaDeEstados/Q_bus_FSM_FFd3 (FF)
+  Destination Clock: Inst_clk_divider/temporal rising
+
+  Data Path: Piso_Actual_Sensor<1> to Inst_MaquinaDeEstados/Q_bus_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.715   1.148  Piso_Actual_Sensor_1_IBUF (Piso_Actual_Sensor_1_IBUF)
+     LUT4:I0->O            7   0.479   1.201  Inst_codificador_PA/cod_out<0>1 (Piso_Actual_Display_2_OBUF)
+     LUT4:I0->O            1   0.479   0.000  Inst_MaquinaDeEstados/Q_bus_FSM_FFd3-In1 (Inst_MaquinaDeEstados/Q_bus_FSM_FFd3-In1)
+     MUXF5:I1->O           1   0.314   0.000  Inst_MaquinaDeEstados/Q_bus_FSM_FFd3-In_f5 (Inst_MaquinaDeEstados/Q_bus_FSM_FFd3-In)
+     FDR:D                     0.176          Inst_MaquinaDeEstados/Q_bus_FSM_FFd3
+    ----------------------------------------
+    Total                      4.512ns (2.163ns logic, 2.349ns route)
+                                       (47.9% logic, 52.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_MaquinaDeEstados/Q_bus_FSM_FFd4'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              6.141ns (Levels of Logic = 1)
+  Source:            Inst_MaquinaDeEstados/salidas_2 (LATCH)
+  Destination:       Puerta (PAD)
+  Source Clock:      Inst_MaquinaDeEstados/Q_bus_FSM_FFd4 rising
+
+  Data Path: Inst_MaquinaDeEstados/salidas_2 to Puerta
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.551   0.681  Inst_MaquinaDeEstados/salidas_2 (Inst_MaquinaDeEstados/salidas_2)
+     OBUF:I->O                 4.909          Puerta_OBUF (Puerta)
+    ----------------------------------------
+    Total                      6.141ns (5.460ns logic, 0.681ns route)
+                                       (88.9% logic, 11.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 24 / 6
+-------------------------------------------------------------------------
+Delay:               8.157ns (Levels of Logic = 3)
+  Source:            Piso_Actual_Sensor<1> (PAD)
+  Destination:       Piso_Actual_Display<2> (PAD)
+
+  Data Path: Piso_Actual_Sensor<1> to Piso_Actual_Display<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.715   1.148  Piso_Actual_Sensor_1_IBUF (Piso_Actual_Sensor_1_IBUF)
+     LUT4:I0->O            7   0.479   0.906  Inst_codificador_PA/cod_out<0>1 (Piso_Actual_Display_2_OBUF)
+     OBUF:I->O                 4.909          Piso_Actual_Display_2_OBUF (Piso_Actual_Display<2>)
+    ----------------------------------------
+    Total                      8.157ns (6.103ns logic, 2.054ns route)
+                                       (74.8% logic, 25.2% route)
+
+=========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.41 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.96 secs
  
 --> 
 
-Total memory usage is 253764 kilobytes
+Total memory usage is 255428 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   60 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

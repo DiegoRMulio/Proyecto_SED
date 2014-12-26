@@ -1,0 +1,2 @@
+vhdl isim_temp "MaquinaDeEstados.vhd"
+vhdl isim_temp "tb_MaquinaDeEstados.vhd"
