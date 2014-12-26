@@ -18,13 +18,13 @@ type mis_estados is (S0,S1,S2,S3);
 signal Q_bus, D_bus : mis_estados;
 signal salidas: STD_LOGIC_VECTOR (2 downto 0);
 signal Piso_Actual_i: STD_LOGIC_VECTOR (1 downto 0);
-signal clk: STD_LOGIC;
+--signal clk: STD_LOGIC;
 ---------------------------------------------------
 begin
 -----REGISTRO DE ESTADO---------
-process (clk)
+process (clk_Maq)
 begin
-	if clk'event and clk ='1' then
+	if clk_Maq'event and clk_Maq ='1' then
 		if reset = '1' then
 			Q_bus <= S0;
 		else 
