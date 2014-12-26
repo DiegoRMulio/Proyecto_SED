@@ -1,0 +1,443 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Ascensor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Ascensor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Ascensor"
+Output Format                      : NGC
+Target Device                      : xc3s200-5-ft256
+
+---- Source Options
+Top Module Name                    : Ascensor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/clk_divider.vhd" in Library work.
+Architecture behavioral of Entity clk_divider is up to date.
+Compiling vhdl file "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Decodificador.vhd" in Library work.
+Architecture dataflow of Entity decodificador is up to date.
+Compiling vhdl file "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/codificador.vhd" in Library work.
+Architecture dataflow of Entity codificador is up to date.
+Compiling vhdl file "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/MaquinaDeEstados.vhd" in Library work.
+Architecture behavioral of Entity maquinadeestados is up to date.
+Compiling vhdl file "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Ascensor.vhd" in Library work.
+Architecture behavioral of Entity ascensor is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Ascensor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clk_divider> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <decodificador> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <codificador> in library <work> (architecture <dataflow>).
+
+Analyzing hierarchy for entity <MaquinaDeEstados> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Ascensor> in library <work> (Architecture <behavioral>).
+Entity <Ascensor> analyzed. Unit <Ascensor> generated.
+
+Analyzing Entity <clk_divider> in library <work> (Architecture <behavioral>).
+Entity <clk_divider> analyzed. Unit <clk_divider> generated.
+
+Analyzing Entity <decodificador> in library <work> (Architecture <dataflow>).
+Entity <decodificador> analyzed. Unit <decodificador> generated.
+
+Analyzing Entity <codificador> in library <work> (Architecture <dataflow>).
+Entity <codificador> analyzed. Unit <codificador> generated.
+
+Analyzing Entity <MaquinaDeEstados> in library <work> (Architecture <behavioral>).
+Entity <MaquinaDeEstados> analyzed. Unit <MaquinaDeEstados> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk_divider>.
+    Related source file is "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/clk_divider.vhd".
+    Found 32-bit up counter for signal <counter>.
+    Found 1-bit register for signal <temporal>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clk_divider> synthesized.
+
+
+Synthesizing Unit <decodificador>.
+    Related source file is "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Decodificador.vhd".
+    Found 4x7-bit ROM for signal <led>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <decodificador> synthesized.
+
+
+Synthesizing Unit <codificador>.
+    Related source file is "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/codificador.vhd".
+Unit <codificador> synthesized.
+
+
+Synthesizing Unit <MaquinaDeEstados>.
+    Related source file is "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/MaquinaDeEstados.vhd".
+WARNING:Xst:647 - Input <clk_Maq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <clk> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+    Found finite state machine <FSM_0> for signal <Q_bus>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 2-bit latch for signal <Piso_Actual_i>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <salidas>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 2-bit addsub for signal <Piso_Actual_i$addsub0000>.
+    Found 2-bit comparator greater for signal <Q_bus$cmp_gt0000> created at line 48.
+    Found 2-bit comparator less for signal <Q_bus$cmp_lt0000> created at line 47.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <MaquinaDeEstados> synthesized.
+
+
+Synthesizing Unit <Ascensor>.
+    Related source file is "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Ascensor.vhd".
+WARNING:Xst:1780 - Signal <salidas> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Q_bus> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <D_bus> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <Ascensor> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x7-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 2-bit addsub                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Latches                                              : 2
+ 2-bit latch                                           : 1
+ 3-bit latch                                           : 1
+# Comparators                                          : 2
+ 2-bit comparator greater                              : 1
+ 2-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Inst_MaquinaDeEstados/Q_bus/FSM> on signal <Q_bus[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 0001
+ s1    | 0010
+ s2    | 0100
+ s3    | 1000
+-------------------
+WARNING:Xst:1290 - Hierarchical block <Inst_clk_divider> is unconnected in block <Ascensor>.
+   It will be removed from the design.
+WARNING:Xst:1293 - FF/Latch <FFd1> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd2> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd3> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd4> has a constant value of 1 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <Inst_codificador> is unconnected in block <Ascensor>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 4x7-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 2-bit addsub                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Latches                                              : 2
+ 2-bit latch                                           : 1
+ 3-bit latch                                           : 1
+# Comparators                                          : 2
+ 2-bit comparator greater                              : 1
+ 2-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <Piso_Actual_i_1> (without init value) has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Q_bus_FSM_FFd1> has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Q_bus_FSM_FFd2> has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Q_bus_FSM_FFd3> has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Q_bus_FSM_FFd4> has a constant value of 1 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <salidas_0> (without init value) has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <salidas_1> (without init value) has a constant value of 0 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <salidas_2> (without init value) has a constant value of 1 in block <MaquinaDeEstados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1294 - Latch <Piso_Actual_i_0> is equivalent to a wire in block <MaquinaDeEstados>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/temporal> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_0> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_1> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_2> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_3> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_4> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_5> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_6> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_7> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_8> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_9> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_10> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_11> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_12> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_13> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_14> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_15> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_16> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_17> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_18> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_19> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_20> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_21> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_22> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_23> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_24> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_25> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_26> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_27> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_28> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_29> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_30> of sequential type is unconnected in block <Ascensor>.
+WARNING:Xst:2677 - Node <Inst_clk_divider/counter_31> of sequential type is unconnected in block <Ascensor>.
+
+Optimizing unit <Ascensor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Ascensor, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Ascensor.ngr
+Top Level Output File Name         : Ascensor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# IO Buffers                       : 10
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-5 
+
+ Number of Slices:                        0  out of   1920     0%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  10  out of    173     5%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.62 secs
+ 
+--> 
+
+Total memory usage is 251012 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   60 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

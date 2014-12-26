@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Diego/Desktop/Ascensor/tb_clk_divider_isim_beh.exe" -prj "C:/Users/Diego/Desktop/Ascensor/tb_clk_divider_beh.prj" "work.tb_clk_divider" 

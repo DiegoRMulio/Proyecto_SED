@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Diego/Desktop/Ascensor/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Diego/Desktop/Ascensor/xst"
+elaborate
+-ifn clk_divider.prj
+-ifmt mixed

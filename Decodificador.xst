@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/xst"
+elaborate
+-ifn decodificador.prj
+-ifmt mixed

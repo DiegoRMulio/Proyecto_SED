@@ -1,0 +1,10 @@
+AR maquinadeestados behavioral "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/MaquinaDeEstados.vhd" sub00/vhpl04 1418293559
+AR codificador dataflow "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/codificador.vhd" sub00/vhpl08 1418293557
+EN maquinadeestados NULL "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/MaquinaDeEstados.vhd" sub00/vhpl03 1418293558
+AR clk_divider behavioral C:/Users/Diego/Desktop/Ascensor/clk_divider.vhd sub00/vhpl02 1419411611
+EN clk_divider NULL C:/Users/Diego/Desktop/Ascensor/clk_divider.vhd sub00/vhpl01 1419411610
+EN codificador NULL "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/codificador.vhd" sub00/vhpl07 1418293556
+AR ascensor behavioral "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Ascensor.vhd" sub00/vhpl09 1418293561
+EN decodificador NULL "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Decodificador.vhd" sub00/vhpl05 1418293554
+EN ascensor NULL "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Ascensor.vhd" sub00/vhpl00 1418293560
+AR decodificador dataflow "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Decodificador.vhd" sub00/vhpl06 1418293555

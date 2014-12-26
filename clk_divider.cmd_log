@@ -1,0 +1,2 @@
+vhdtdtfi -prj Ascensor -o C:/Users/sed/Desktop/Ascensor/Ascensor/clk_divider.vhi -module clk_divider -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clk_divider.vhd 
+vhdtdtfi -prj Ascensor -o C:/Users/sed/Desktop/Ascensor/Ascensor/clk_divider.vhi -module clk_divider -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clk_divider.vhd 
