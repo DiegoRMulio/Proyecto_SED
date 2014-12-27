@@ -80,11 +80,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1418294812" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1418294812">
+    <transform xil_pn:end_ts="1419698844" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1419698844">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1419683514" xil_pn:in_ck="-4241027515093169853" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1419683514">
+    <transform xil_pn:end_ts="1419701133" xil_pn:in_ck="-4241027515093169853" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1419701133">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Ascensor.vhd"/>
@@ -98,25 +98,21 @@
       <outfile xil_pn:name="tb_codificador.vhd"/>
       <outfile xil_pn:name="tb_decodificador.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1419677734" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7977878096664243319" xil_pn:start_ts="1419677734">
+    <transform xil_pn:end_ts="1419698844" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7977878096664243319" xil_pn:start_ts="1419698844">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1419677734" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-157409462488288191" xil_pn:start_ts="1419677734">
+    <transform xil_pn:end_ts="1419698844" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-157409462488288191" xil_pn:start_ts="1419698844">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418294813" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5705122193032081454" xil_pn:start_ts="1418294812">
+    <transform xil_pn:end_ts="1419698844" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5705122193032081454" xil_pn:start_ts="1419698844">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1419681769" xil_pn:in_ck="-4241027515093169853" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1419681769">
+    <transform xil_pn:end_ts="1419701139" xil_pn:in_ck="-4241027515093169853" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1419701139">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Ascensor.vhd"/>
       <outfile xil_pn:name="Decodificador.vhd"/>
       <outfile xil_pn:name="MaquinaDeEstados.vhd"/>
@@ -128,14 +124,9 @@
       <outfile xil_pn:name="tb_codificador.vhd"/>
       <outfile xil_pn:name="tb_decodificador.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1419681774" xil_pn:in_ck="-4241027515093169853" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="630072872706921839" xil_pn:start_ts="1419681769">
+    <transform xil_pn:end_ts="1419701151" xil_pn:in_ck="-4241027515093169853" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4608289371813104758" xil_pn:start_ts="1419701139">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -143,12 +134,9 @@
       <outfile xil_pn:name="tb_Ascensor_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1419681775" xil_pn:in_ck="-6681785086092923456" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="755871807397619100" xil_pn:start_ts="1419681774">
+    <transform xil_pn:end_ts="1419701151" xil_pn:in_ck="-6681785086092923456" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="755871807397619100" xil_pn:start_ts="1419701151">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="tb_Ascensor_isim_beh.wdb"/>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_ascensor" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/tb_ascensor/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ascensor/uut/Inst_MaquinaDeEstados/clk_maq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_maq</obj_property>
+      <obj_property name="ObjectShortName">clk_maq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ascensor/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ascensor/piso_deseado" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">piso_deseado[3:0]</obj_property>
+      <obj_property name="ObjectShortName">piso_deseado[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ascensor/piso_actual_sensor" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">piso_actual_sensor[3:0]</obj_property>
+      <obj_property name="ObjectShortName">piso_actual_sensor[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ascensor/piso_actual_display" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">piso_actual_display[6:0]</obj_property>
+      <obj_property name="ObjectShortName">piso_actual_display[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ascensor/puerta" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">puerta</obj_property>
+      <obj_property name="ObjectShortName">puerta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ascensor/motor" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">motor[1:0]</obj_property>
+      <obj_property name="ObjectShortName">motor[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ascensor/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ascensor/uut/Inst_MaquinaDeEstados/q_bus" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">q_bus</obj_property>
+      <obj_property name="ObjectShortName">q_bus</obj_property>
+   </wvobject>
+</wave_config>

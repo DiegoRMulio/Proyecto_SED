@@ -33,7 +33,7 @@ ARCHITECTURE behavior OF tb_Ascensor IS
    signal Motor : std_logic_vector(1 downto 0);
 
    -- Clock period definitions
-   constant clk_period : time := 10 ns;
+   constant clk_period : time := 20 ns;
  
 BEGIN
  
@@ -65,25 +65,26 @@ BEGIN
 			wait for clk_period;
 			reset<='0';
 			Piso_Deseado<="1000";
-			Piso_Actual_Sensor<="0000";
-			wait for 1000 ms;
-			Piso_Deseado<="1000";
 			Piso_Actual_Sensor<="0001";
-			wait for 1000 ms;
+			wait for 2000 ms;
 			Piso_Deseado<="1000";
 			Piso_Actual_Sensor<="0010";
 			wait for 1000 ms;
 			Piso_Deseado<="1000";
 			Piso_Actual_Sensor<="0100";
-			wait for 1000 ms ;
+			wait for 1000 ms;
 			Piso_Deseado<="1000";
 			Piso_Actual_Sensor<="1000";
-			wait for 1000 ms;
+			wait for 1000 ms ;
+			
+--			Piso_Deseado<="1000";
+--			Piso_Actual_Sensor<="1000";
+--			wait for 1000 ms;
 	
       -- hold reset state for 100 ns.
      -- wait for 100 ns;	
 
-      wait for clk_period*10;
+      --wait for clk_period*10;
 
       -- insert stimulus here 
 

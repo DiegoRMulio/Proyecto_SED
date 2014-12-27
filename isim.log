@@ -1,11 +1,21 @@
 ISim log file
-Running: C:\Users\Daniel\Desktop\Proyecto_SED\tb_Ascensor_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Daniel/Desktop/Proyecto_SED/tb_Ascensor_isim_beh.wdb 
+Running: C:\Users\Diego\Documents\GitHub\Proyecto_SED\tb_Ascensor_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor_isim_beh.wdb 
 ISim P.15xf (signature 0xc3576ebc)
 This is a Full version of ISim.
-Time resolution is 1 ps
+Time resolution is 1 ns
 # onerror resume
 # wave add /
 # run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 7s
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 8667072330 ns : File "C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor.vhd" Line 56
+# restart
+# run 1s
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run 7s

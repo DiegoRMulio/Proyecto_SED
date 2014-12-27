@@ -2,9 +2,27 @@ Command line:
    tb_Ascensor_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49904
+     -socket  1637
 
-Sat Dec 27 13:02:56 2014
+Sat Dec 27 18:25:56 2014
 
 
- Elaboration Time: 0.078 sec
+ Elaboration Time: 0.140625 sec
+
+ Current Memory Usage: 354.791 Meg
+
+ Total Signals          : 41
+ Total Nets             : 38
+ Total Signal Drivers   : 15
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 13
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 540
+
+ Total Simulation Time: 3097.97 sec
+
+ Current Memory Usage: 354.791 Meg
+
+Sat Dec 27 19:57:31 2014
+

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Daniel/Desktop/Proyecto_SED/Decodificador.vhd";
+static const char *ng0 = "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Decodificador.vhd";
 
 
 
@@ -57,29 +57,29 @@ LAB3:    goto *t2;
 LAB2:    xsi_set_current_line(10, ng0);
     t2 = (t0 + 1032U);
     t3 = *((char **)t2);
-    t2 = (t0 + 4346);
+    t2 = (t0 + 4386);
     t5 = xsi_mem_cmp(t2, t3, 2U);
     if (t5 == 1)
         goto LAB5;
 
-LAB10:    t6 = (t0 + 4348);
+LAB10:    t6 = (t0 + 4388);
     t8 = xsi_mem_cmp(t6, t3, 2U);
     if (t8 == 1)
         goto LAB6;
 
-LAB11:    t9 = (t0 + 4350);
+LAB11:    t9 = (t0 + 4390);
     t11 = xsi_mem_cmp(t9, t3, 2U);
     if (t11 == 1)
         goto LAB7;
 
-LAB12:    t12 = (t0 + 4352);
+LAB12:    t12 = (t0 + 4392);
     t14 = xsi_mem_cmp(t12, t3, 2U);
     if (t14 == 1)
         goto LAB8;
 
 LAB13:
 LAB9:    xsi_set_current_line(12, ng0);
-    t2 = (t0 + 4382);
+    t2 = (t0 + 4422);
     t4 = (t0 + 2752);
     t6 = (t4 + 56U);
     t7 = *((char **)t6);
@@ -96,7 +96,7 @@ LAB17:    t2 = (t0 + 2672);
 
 LAB1:    return;
 LAB5:    xsi_set_current_line(12, ng0);
-    t15 = (t0 + 4354);
+    t15 = (t0 + 4394);
     t17 = (t0 + 2752);
     t18 = (t17 + 56U);
     t19 = *((char **)t18);
@@ -107,7 +107,7 @@ LAB5:    xsi_set_current_line(12, ng0);
     goto LAB4;
 
 LAB6:    xsi_set_current_line(12, ng0);
-    t2 = (t0 + 4361);
+    t2 = (t0 + 4401);
     t4 = (t0 + 2752);
     t6 = (t4 + 56U);
     t7 = *((char **)t6);
@@ -118,7 +118,7 @@ LAB6:    xsi_set_current_line(12, ng0);
     goto LAB4;
 
 LAB7:    xsi_set_current_line(12, ng0);
-    t2 = (t0 + 4368);
+    t2 = (t0 + 4408);
     t4 = (t0 + 2752);
     t6 = (t4 + 56U);
     t7 = *((char **)t6);
@@ -129,7 +129,7 @@ LAB7:    xsi_set_current_line(12, ng0);
     goto LAB4;
 
 LAB8:    xsi_set_current_line(12, ng0);
-    t2 = (t0 + 4375);
+    t2 = (t0 + 4415);
     t4 = (t0 + 2752);
     t6 = (t4 + 56U);
     t7 = *((char **)t6);

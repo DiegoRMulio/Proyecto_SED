@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Daniel/Desktop/Proyecto_SED/clk_divider.vhd";
+static const char *ng0 = "C:/Users/Diego/Documents/GitHub/Proyecto_SED/clk_divider.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1690584930_503743352(char *, unsigned char );

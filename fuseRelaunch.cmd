@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Daniel/Desktop/Proyecto_SED/tb_Ascensor_isim_beh.exe" -prj "C:/Users/Daniel/Desktop/Proyecto_SED/tb_Ascensor_beh.prj" "work.tb_Ascensor" 
+-intstyle "ise" -incremental -o "C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor_isim_beh.exe" -prj "C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor_beh.prj" "work.tb_Ascensor" -timeprecision_vhdl "1ns" 
