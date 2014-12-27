@@ -1,21 +1,30 @@
-Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Daniel/Desktop/Proyecto_SED/tb_MaquinaDeEstados_isim_beh.exe -prj C:/Users/Daniel/Desktop/Proyecto_SED/tb_MaquinaDeEstados_beh.prj work.tb_MaquinaDeEstados 
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Daniel/Desktop/Proyecto_SED/tb_Ascensor_isim_beh.exe -prj C:/Users/Daniel/Desktop/Proyecto_SED/tb_Ascensor_beh.prj work.tb_Ascensor 
 ISim P.15xf (signature 0xc3576ebc)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.vhd" into library work
-Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/tb_MaquinaDeEstados.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/Decodificador.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/clk_divider.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/tb_Ascensor.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity clk_divider [clk_divider_default]
+Compiling architecture dataflow of entity decodificador [decodificador_default]
+Compiling architecture dataflow of entity codificador [codificador_default]
 Compiling architecture behavioral of entity MaquinaDeEstados [maquinadeestados_default]
-Compiling architecture behavior of entity tb_maquinadeestados
+Compiling architecture behavioral of entity Ascensor [ascensor_default]
+Compiling architecture behavior of entity tb_ascensor
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 7 VHDL Units
-Built simulation executable C:/Users/Daniel/Desktop/Proyecto_SED/tb_MaquinaDeEstados_isim_beh.exe
-Fuse Memory Usage: 32768 KB
-Fuse CPU Usage: 608 ms
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 16 VHDL Units
+Built simulation executable C:/Users/Daniel/Desktop/Proyecto_SED/tb_Ascensor_isim_beh.exe
+Fuse Memory Usage: 35688 KB
+Fuse CPU Usage: 795 ms

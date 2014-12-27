@@ -18,8 +18,6 @@ architecture Behavioral of MaquinaDeEstados is
 type mis_estados is (S0,S1,S2,S3,S4);
 signal Q_bus, D_bus : mis_estados;
 signal salidas: STD_LOGIC_VECTOR (2 downto 0);
---signal Piso_Actual_i: STD_LOGIC_VECTOR (1 downto 0);
---signal clk: STD_LOGIC;
 ---------------------------------------------------
 begin
 -----REGISTRO DE ESTADO---------
@@ -38,7 +36,6 @@ process(Q_bus,reset,Piso_Deseado,Piso_Actual_in)
 begin
 	CASE (Q_BUS) is
 		when S0 =>
-				--Piso_Actual_i <= "00";
 				if reset = '0' then
 					D_bus<=S1;
 				elsif reset = '1' then
@@ -55,32 +52,12 @@ begin
 					D_bus <= S1;
 				end if;
 		when S2 =>
-		--	process (Piso_Actual_in)
-		--	begin 
 					D_bus <= S1;
-		--	end process;
---				if Piso_Actual_in'transaction then 
---					D_bus <= S1;
---				end if;
+	
 		when S3 =>
-		--	process (Piso_Actual_in)
-		--	begin 
 					D_bus <= S1;
-		--	end process;
-		
---				if Piso_Actual_in'transaction then 
---					D_bus <= S1;
---				end if;
-				--modificaciones
 		when S4 =>
-		--	process (Piso_Deseado)
-		--	begin
 					D_bus <= S1;
-		--	end process;
---				if Piso_Deseado'transaction then 
---					D_bus <= S1;
---				end if;
-			-- hasta aqui--
 	end case;
 end process;
 

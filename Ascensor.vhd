@@ -81,15 +81,6 @@ Inst_codificador_PA: codificador PORT MAP(
 		cod_in =>Piso_Actual_Sensor ,
 		cod_out =>Piso_Actual_BFSM 
 	);	
----------------------------------------------------	
-----Inst_MaquinaDeEstados: MaquinaDeEstados PORT MAP(
-----		clk_Maq =>clk_1s ,
-----		reset =>reset ,
-----		Piso_Deseado =>Piso_Deseado_i ,
-----		Piso_Actual =>Piso_Actual_i ,
-----		Puerta =>Puerta ,
-----		Motor =>Motor 
-----	);
 ---------------------------------------------------
 
 	Inst_MaquinaDeEstados: MaquinaDeEstados PORT MAP(
