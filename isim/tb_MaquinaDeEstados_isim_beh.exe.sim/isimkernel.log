@@ -2,27 +2,9 @@ Command line:
    tb_MaquinaDeEstados_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51560
+     -socket  49317
 
-Fri Dec 26 23:03:43 2014
+Sat Dec 27 11:44:49 2014
 
 
  Elaboration Time: 0.078 sec
-
- Current Memory Usage: 509.129 Meg
-
- Total Signals          : 17
- Total Nets             : 16
- Total Signal Drivers   : 9
- Total Blocks           : 5
- Total Primitive Blocks : 4
- Total Processes        : 8
- Total Traceable Variables  : 11
- Total Scalar Nets and Variables : 395
-
- Total Simulation Time: 0.421202 sec
-
- Current Memory Usage: 509.129 Meg
-
-Fri Dec 26 23:07:21 2014
-

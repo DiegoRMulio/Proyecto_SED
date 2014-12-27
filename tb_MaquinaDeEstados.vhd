@@ -64,16 +64,30 @@ BEGIN
    begin		
 		Piso_Deseado<="11";
 		Piso_Actual_in<="00";
-      wait for 10 ns;	
+      wait for clk_Maq_period*2 ;	
 		Piso_Deseado<="11";
 		Piso_Actual_in<="01";
-		wait for 10 ns;
+		wait for clk_Maq_period*2;
 		Piso_Deseado<="11";
 		Piso_Actual_in<="10";
-		wait for 10 ns;
+		wait for clk_Maq_period*2;
 		Piso_Deseado<="11";
 		Piso_Actual_in<="11";
-		wait for 10 ns;
+		wait for clk_Maq_period*2;
+		
+		wait for clk_Maq_period*4;
+		Piso_Deseado<="00";
+		Piso_Actual_in<="11";
+      wait for clk_Maq_period*2 ;	
+		Piso_Deseado<="00";
+		Piso_Actual_in<="10";
+		wait for clk_Maq_period*2;
+		Piso_Deseado<="00";
+		Piso_Actual_in<="01";
+		wait for clk_Maq_period*2;
+		Piso_Deseado<="00";
+		Piso_Actual_in<="00";
+		wait for clk_Maq_period*2;
 
 
       -- insert stimulus here 
