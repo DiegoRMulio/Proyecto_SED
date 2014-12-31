@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/xst"
+set -tmpdir "C:/Users/Daniel/Desktop/Proyecto_SED/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Daniel/Desktop/Proyecto_SED/xst"
 elaborate
 -ifn codificador.prj
 -ifmt mixed

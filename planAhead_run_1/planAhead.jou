@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# PlanAhead v14.1 (64-bit)
+# Build 179419 by xbuild on Thu Apr 26 11:43:29 MDT 2012
+# Start of session at: Wed Dec 31 18:44:46 2014
+# Process ID: 3056
+# Log file: C:/Users/Daniel/Desktop/Proyecto_SED/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Daniel/Desktop/Proyecto_SED/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Daniel/Desktop/Proyecto_SED/pa.fromNetlist.tcl
+set_property iostandard LVCMOS33 [get_ports [list {Piso_Actual_Display[6]} {Piso_Actual_Display[5]} {Piso_Actual_Display[4]} {Piso_Actual_Display[3]} {Piso_Actual_Display[2]} {Piso_Actual_Display[1]} {Piso_Actual_Display[0]} {Motor[1]} {Motor[0]} {Piso_Actual_Sensor[3]} {Piso_Actual_Sensor[2]} {Piso_Actual_Sensor[1]} {Piso_Actual_Sensor[0]} {Piso_Deseado[3]} {Piso_Deseado[2]} {Piso_Deseado[1]} {Piso_Deseado[0]} clk reset Puerta]]
+set_property package_pin "" [get_ports [list  {Motor[0]}]]
+startgroup
+set_property package_pin F12 [get_ports {Piso_Deseado[0]}]
+endgroup
+startgroup
+set_property package_pin G12 [get_ports {Piso_Deseado[1]}]
+endgroup
+startgroup
+set_property package_pin H14 [get_ports {Piso_Deseado[2]}]
+endgroup
+startgroup
+set_property package_pin H13 [get_ports {Piso_Deseado[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Piso_Actual_Display[6]}]]
+set_property package_pin "" [get_ports [list  {Piso_Actual_Sensor[1]}]]
+startgroup
+set_property package_pin J14 [get_ports {Piso_Actual_Sensor[0]}]
+endgroup
+startgroup
+set_property package_pin J13 [get_ports {Piso_Actual_Sensor[1]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {Piso_Actual_Sensor[2]}]
+endgroup
+startgroup
+set_property package_pin K13 [get_ports {Piso_Actual_Sensor[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Piso_Actual_Display[5]}]]
+startgroup
+set_property package_pin K12 [get_ports {Piso_Actual_Display[0]}]
+endgroup
+startgroup
+set_property package_pin P14 [get_ports {Piso_Actual_Display[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Piso_Actual_Display[1]}]]
+startgroup
+set_property package_pin K12 [get_ports {Piso_Actual_Display[0]}]
+endgroup
+startgroup
+set_property package_pin P14 [get_ports {Piso_Actual_Display[1]}]
+endgroup
+startgroup
+set_property package_pin L12 [get_ports {Piso_Actual_Display[2]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {Piso_Actual_Display[3]}]
+endgroup
+startgroup
+set_property package_pin P13 [get_ports {Piso_Actual_Display[4]}]
+endgroup
+startgroup
+set_property package_pin N12 [get_ports {Piso_Actual_Display[5]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {Piso_Actual_Display[6]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports reset]
+endgroup
+set_property package_pin "" [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  Puerta]]
+startgroup
+set_property package_pin E14 [get_ports {Piso_Actual_Display[1]}]
+endgroup
+startgroup
+set_property package_pin G13 [get_ports {Piso_Actual_Display[0]}]
+endgroup
+startgroup
+set_property package_pin G13 [get_ports {Piso_Actual_Display[0]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports clk]
+endgroup
+save_design

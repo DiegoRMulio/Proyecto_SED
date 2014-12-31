@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/Diego/Desktop/Ascensor/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Diego/Desktop/Ascensor/xst"
+set -tmpdir "C:/Users/Daniel/Desktop/Proyecto_SED/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Daniel/Desktop/Proyecto_SED/xst"
 elaborate
 -ifn clk_divider.prj
 -ifmt mixed

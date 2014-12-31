@@ -2,6 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_arith.ALL; 
 use IEEE.STD_LOGIC_unsigned.ALL;
+
 entity MaquinaDeEstados is
     Port ( clk_Maq : in  STD_LOGIC;
            reset : in  STD_LOGIC;

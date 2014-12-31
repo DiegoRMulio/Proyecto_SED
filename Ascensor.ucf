@@ -1,0 +1,43 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "Piso_Actual_Display[6]" IOSTANDARD = LVCMOS33;
+NET "Piso_Actual_Display[5]" IOSTANDARD = LVCMOS33;
+NET "Piso_Actual_Display[4]" IOSTANDARD = LVCMOS33;
+NET "Piso_Actual_Display[3]" IOSTANDARD = LVCMOS33;
+NET "Piso_Actual_Display[2]" IOSTANDARD = LVCMOS33;
+NET "Piso_Actual_Display[1]" IOSTANDARD = LVCMOS33;
+NET "Piso_Actual_Display[0]" IOSTANDARD = LVCMOS33;
+NET "Motor[1]" IOSTANDARD = LVCMOS33;
+NET "Motor[0]" IOSTANDARD = LVCMOS33;
+NET "Piso_Actual_Sensor[3]" IOSTANDARD = LVCMOS33;
+NET "Piso_Actual_Sensor[2]" IOSTANDARD = LVCMOS33;
+NET "Piso_Actual_Sensor[1]" IOSTANDARD = LVCMOS33;
+NET "Piso_Actual_Sensor[0]" IOSTANDARD = LVCMOS33;
+NET "Piso_Deseado[3]" IOSTANDARD = LVCMOS33;
+NET "Piso_Deseado[2]" IOSTANDARD = LVCMOS33;
+NET "Piso_Deseado[1]" IOSTANDARD = LVCMOS33;
+NET "Piso_Deseado[0]" IOSTANDARD = LVCMOS33;
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "reset" IOSTANDARD = LVCMOS33;
+NET "Puerta" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "Piso_Deseado[0]" LOC = F12;
+NET "Piso_Deseado[1]" LOC = G12;
+NET "Piso_Deseado[2]" LOC = H14;
+NET "Piso_Deseado[3]" LOC = H13;
+NET "Piso_Actual_Sensor[0]" LOC = J14;
+NET "Piso_Actual_Sensor[1]" LOC = J13;
+NET "Piso_Actual_Sensor[2]" LOC = K14;
+NET "Piso_Actual_Sensor[3]" LOC = K13;
+NET "Piso_Actual_Display[2]" LOC = L12;
+NET "Piso_Actual_Display[3]" LOC = N14;
+NET "Piso_Actual_Display[4]" LOC = P13;
+NET "Piso_Actual_Display[5]" LOC = N12;
+NET "Piso_Actual_Display[6]" LOC = P12;
+NET "reset" LOC = M13;
+NET "Piso_Actual_Display[1]" LOC = E14;
+NET "Piso_Actual_Display[0]" LOC = G13;
+NET "clk" LOC = T9;

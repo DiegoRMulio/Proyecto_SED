@@ -1,38 +1,38 @@
 V3 30
-FL C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd 2014/12/26.22:23:36 P.15xf
-EN work/Ascensor 1419681766 FL C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd \
+FL C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd 2014/12/27.13:31:48 P.15xf
+EN work/Ascensor 1420047846 FL C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/Ascensor/Behavioral 1419681767 \
-      FL C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd EN work/Ascensor 1419681766 \
+AR work/Ascensor/Behavioral 1420047847 \
+      FL C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd EN work/Ascensor 1420047846 \
       CP clk_divider CP decodificador CP codificador CP MaquinaDeEstados
 FL C:/Users/Daniel/Desktop/Proyecto_SED/clk_divider.vhd 2014/12/26.19:31:31 P.15xf
-EN work/clk_divider 1419681758 \
+EN work/clk_divider 1420047838 \
       FL C:/Users/Daniel/Desktop/Proyecto_SED/clk_divider.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
-AR work/clk_divider/Behavioral 1419681759 \
-      FL C:/Users/Daniel/Desktop/Proyecto_SED/clk_divider.vhd EN work/clk_divider 1419681758
+AR work/clk_divider/Behavioral 1420047839 \
+      FL C:/Users/Daniel/Desktop/Proyecto_SED/clk_divider.vhd EN work/clk_divider 1420047838
 FL C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhd 2014/12/26.19:31:31 P.15xf
-EN work/codificador 1419681762 \
+EN work/codificador 1420047842 \
       FL C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhd \
       PB ieee/std_logic_1164 1335251622
-AR work/codificador/dataflow 1419681763 \
-      FL C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhd EN work/codificador 1419681762
+AR work/codificador/dataflow 1420047843 \
+      FL C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhd EN work/codificador 1420047842
 FL C:/Users/Daniel/Desktop/Proyecto_SED/Decodificador.vhd 2014/12/26.19:31:31 P.15xf
-EN work/decodificador 1419681760 \
+EN work/decodificador 1420047840 \
       FL C:/Users/Daniel/Desktop/Proyecto_SED/Decodificador.vhd \
       PB ieee/std_logic_1164 1335251622
-AR work/decodificador/dataflow 1419681761 \
+AR work/decodificador/dataflow 1420047841 \
       FL C:/Users/Daniel/Desktop/Proyecto_SED/Decodificador.vhd \
-      EN work/decodificador 1419681760
-FL C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.vhd 2014/12/26.23:07:35 P.15xf
-EN work/MaquinaDeEstados 1419681764 \
+      EN work/decodificador 1420047840
+FL C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.vhd 2014/12/31.18:42:16 P.15xf
+EN work/MaquinaDeEstados 1420047844 \
       FL C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/MaquinaDeEstados/Behavioral 1419681765 \
+AR work/MaquinaDeEstados/Behavioral 1420047845 \
       FL C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.vhd \
-      EN work/MaquinaDeEstados 1419681764
+      EN work/MaquinaDeEstados 1420047844
 FL "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/Ascensor.vhd" 2014/11/27.19:05:50 P.15xf
 FL "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/clk_divider.vhd" 2014/11/27.18:07:46 P.15xf
 FL "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/codificador.vhd" 2014/11/27.18:56:50 P.15xf
