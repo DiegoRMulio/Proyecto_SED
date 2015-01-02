@@ -14,3 +14,7 @@ xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn 
 xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
 xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
 xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
+xst -intstyle ise -ifn "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.syr" 
+xst -intstyle ise -ifn "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.syr" 
+xst -intstyle ise -ifn "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.syr" 
+xst -intstyle ise -ifn "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.syr" 

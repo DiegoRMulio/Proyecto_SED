@@ -7,6 +7,7 @@ Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/MaquinaDeEstados
 Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Decodificador.vhd" into library work
 Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/codificador.vhd" into library work
 Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/clk_divider.vhd" into library work
+Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/BloqueadorPDeseado.vhd" into library work
 Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.vhd" into library work
 Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor.vhd" into library work
 Starting static elaboration
@@ -19,13 +20,14 @@ Compiling package numeric_std
 Compiling architecture behavioral of entity clk_divider [clk_divider_default]
 Compiling architecture dataflow of entity decodificador [decodificador_default]
 Compiling architecture dataflow of entity codificador [codificador_default]
+Compiling architecture behavioral of entity BloqueadorPDeseado [bloqueadorpdeseado_default]
 Compiling architecture behavioral of entity MaquinaDeEstados [maquinadeestados_default]
 Compiling architecture behavioral of entity Ascensor [ascensor_default]
 Compiling architecture behavior of entity tb_ascensor
 Time Resolution for simulation is 1ns.
 Waiting for 1 sub-compilation(s) to finish...
 WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: El sistema no puede encontrar la ruta especificada, "isim\tb_Ascensor_isim_beh.exe.sim\libPortability.dll".
-Compiled 16 VHDL Units
+Compiled 18 VHDL Units
 Built simulation executable C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor_isim_beh.exe
-Fuse Memory Usage: 34732 KB
-Fuse CPU Usage: 2093 ms
+Fuse Memory Usage: 34908 KB
+Fuse CPU Usage: 2156 ms

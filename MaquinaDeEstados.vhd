@@ -10,7 +10,8 @@ entity MaquinaDeEstados is
            Piso_Actual_in: in STD_LOGIC_VECTOR (1 downto 0);
 			  Piso_Actual_out: out STD_LOGIC_VECTOR (1 downto 0);
            Puerta : out  STD_LOGIC;
-           Motor : out  STD_LOGIC_VECTOR(1 downto 0)
+           Motor : out  STD_LOGIC_VECTOR(1 downto 0);
+			  EnablePDeseado: out STD_LOGIC
            );
 end MaquinaDeEstados;
 
@@ -18,7 +19,7 @@ architecture Behavioral of MaquinaDeEstados is
 ---------------------------------------------------
 type mis_estados is (S0,S1,S2,S3,S4);
 signal Q_bus, D_bus : mis_estados;
-signal salidas: STD_LOGIC_VECTOR (2 downto 0);
+signal salidas: STD_LOGIC_VECTOR (3 downto 0);
 ---------------------------------------------------
 begin
 -----REGISTRO DE ESTADO---------
@@ -65,15 +66,16 @@ end process;
 ------LOGICA DE LA SALIDA-------
 
 	with Q_bus select
-	salidas <= 	"100" when S0,
-					"001" when S2,
-					"010" when S3,
-					"100" when S4,
+	salidas <= 	"1001" when S0,
+					"0010" when S2,
+					"0100" when S3,
+					"1001" when S4,
 					salidas when S1;
 					
-	Puerta <= salidas(2);
-	Motor <= salidas(1) & salidas (0);
+	Puerta <= salidas(3);
+	Motor <= salidas(2) & salidas (1);
 	Piso_Actual_out <= Piso_Actual_in; 
+	EnablePDeseado <= salidas(0);
 
 end Behavioral;
 

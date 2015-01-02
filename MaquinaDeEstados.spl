@@ -5,6 +5,7 @@ reset
 =Piso_Actual_in[1:0]=
 [Outputs]
 Puerta
+EnablePDeseado
 =Piso_Actual_out[1:0]=
 =Motor[1:0]=
 [BiDir]

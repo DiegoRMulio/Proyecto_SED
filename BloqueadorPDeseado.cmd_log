@@ -1,0 +1,3 @@
+vhdtdtfi -lib work BloqueadorPDeseado.vhd -prj Ascensor -o BloqueadorPDeseado.spl -module BloqueadorPDeseado -template D:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 BloqueadorPDeseado.spl C:/Users/Diego/Documents/GitHub/Proyecto_SED/BloqueadorPDeseado.sym 
+vhdtdtfi -prj Ascensor -o C:/Users/Diego/Documents/GitHub/Proyecto_SED/BloqueadorPDeseado.vhi -module BloqueadorPDeseado -template D:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work BloqueadorPDeseado.vhd 

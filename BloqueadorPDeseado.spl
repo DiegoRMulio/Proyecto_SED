@@ -1,0 +1,7 @@
+[Inputs]
+clk
+Enable
+=Piso_Deseado_in[1:0]=
+[Outputs]
+=Piso_Deseado_out[1:0]=
+[BiDir]

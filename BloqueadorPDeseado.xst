@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Diego/Documents/GitHub/Proyecto_SED/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Diego/Documents/GitHub/Proyecto_SED/xst"
+elaborate
+-ifn BloqueadorPDeseado.prj
+-ifmt mixed

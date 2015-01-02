@@ -8,14 +8,4 @@ Time resolution is 1 ns
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 7s
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 8667072330 ns : File "C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor.vhd" Line 56
-# restart
-# run 1s
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 7s
+# run 12s

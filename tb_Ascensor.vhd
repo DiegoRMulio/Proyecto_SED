@@ -70,24 +70,20 @@ BEGIN
 			Piso_Deseado<="1000";
 			Piso_Actual_Sensor<="0010";
 			wait for 1000 ms;
-			Piso_Deseado<="1000";
+			Piso_Deseado<="0010";
 			Piso_Actual_Sensor<="0100";
 			wait for 1000 ms;
-			Piso_Deseado<="1000";
+			Piso_Deseado<="0010";
 			Piso_Actual_Sensor<="1000";
+			wait for 2000 ms ;
+			--Empieza a bajar
+			Piso_Deseado<="0010";
+			Piso_Actual_Sensor<="0100";
+			wait for 1000 ms ;
+			Piso_Deseado<="0010";
+			Piso_Actual_Sensor<="0010";
 			wait for 1000 ms ;
 			
---			Piso_Deseado<="1000";
---			Piso_Actual_Sensor<="1000";
---			wait for 1000 ms;
-	
-      -- hold reset state for 100 ns.
-     -- wait for 100 ns;	
-
-      --wait for clk_period*10;
-
-      -- insert stimulus here 
-
       wait;
    end process;
 

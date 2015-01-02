@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file MaquinaDeEstados.vhd -- 22:22:59 12/26/2014
+-- VHDL Instantiation Created from source file MaquinaDeEstados.vhd -- 13:59:27 01/02/2015
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types
@@ -14,7 +14,8 @@
 		Piso_Actual_in : IN std_logic_vector(1 downto 0);          
 		Piso_Actual_out : OUT std_logic_vector(1 downto 0);
 		Puerta : OUT std_logic;
-		Motor : OUT std_logic_vector(1 downto 0)
+		Motor : OUT std_logic_vector(1 downto 0);
+		EnablePDeseado : OUT std_logic
 		);
 	END COMPONENT;
 
@@ -25,7 +26,8 @@
 		Piso_Actual_in => ,
 		Piso_Actual_out => ,
 		Puerta => ,
-		Motor => 
+		Motor => ,
+		EnablePDeseado => 
 	);
 
 
