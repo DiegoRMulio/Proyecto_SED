@@ -2,9 +2,9 @@ Command line:
    tb_Ascensor_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  4325
+     -socket  6369
 
-Fri Jan 02 14:47:18 2015
+Fri Jan 02 15:16:36 2015
 
 
- Elaboration Time: 0.171875 sec
+ Elaboration Time: 0.15625 sec

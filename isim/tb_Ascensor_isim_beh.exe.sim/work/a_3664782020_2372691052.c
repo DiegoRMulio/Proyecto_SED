@@ -247,7 +247,7 @@ LAB16:    xsi_set_current_line(76, ng0);
     memcpy(t9, t2, 4U);
     xsi_driver_first_trans_fast(t4);
     xsi_set_current_line(78, ng0);
-    t7 = (2000 * 1000000LL);
+    t7 = (4000 * 1000000LL);
     t2 = (t0 + 3328);
     xsi_process_wait(t2, t7);
 

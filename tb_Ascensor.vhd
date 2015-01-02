@@ -75,7 +75,7 @@ BEGIN
 			wait for 1000 ms;
 			Piso_Deseado<="0010";
 			Piso_Actual_Sensor<="1000";
-			wait for 2000 ms ;
+			wait for 4000 ms ;
 			--Empieza a bajar
 			Piso_Deseado<="0010";
 			Piso_Actual_Sensor<="0100";
