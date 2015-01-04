@@ -32,6 +32,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Ascensor.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Ascensor.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Ascensor_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Ascensor_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Ascensor_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Ascensor_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Ascensor_vhdl.prj"/>
@@ -42,6 +43,8 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BloqueadorPDeseado.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="BloqueadorPDeseado.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="BloqueadorPDeseado.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="BloqueadorPDeseado_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BloqueadorPDeseado_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Decodificador.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Decodificador.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Decodificador.xst"/>
@@ -69,10 +72,12 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_Ascensor_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_Ascensor_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_Ascensor_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_Ascensor_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_BloqueadorPDeseado_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_BloqueadorPDeseado_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_BloqueadorPDeseado_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_BloqueadorPDeseado_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_MaquinaDeEstados_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_MaquinaDeEstados_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_clk_divider_isim_beh.exe"/>
@@ -91,7 +96,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1420208174" xil_pn:in_ck="8299886857264769830" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1420208174">
+    <transform xil_pn:end_ts="1420403979" xil_pn:in_ck="5096383175840151230" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1420403979">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Ascensor.vhd"/>
@@ -101,16 +106,17 @@
       <outfile xil_pn:name="clk_divider.vhd"/>
       <outfile xil_pn:name="codificador.vhd"/>
       <outfile xil_pn:name="tb_Ascensor.vhd"/>
+      <outfile xil_pn:name="tb_BloqueadorPDeseado.vhd"/>
       <outfile xil_pn:name="tb_MaquinaDeEstados.vhd"/>
       <outfile xil_pn:name="tb_clk_divider.vhd"/>
       <outfile xil_pn:name="tb_codificador.vhd"/>
       <outfile xil_pn:name="tb_decodificador.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1420206420" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7977878096664243319" xil_pn:start_ts="1420206420">
+    <transform xil_pn:end_ts="1420403742" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-80508786693523586" xil_pn:start_ts="1420403742">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1420206420" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-157409462488288191" xil_pn:start_ts="1420206420">
+    <transform xil_pn:end_ts="1420403742" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7967336346209837622" xil_pn:start_ts="1420403742">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -118,7 +124,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1420208180" xil_pn:in_ck="8299886857264769830" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1420208180">
+    <transform xil_pn:end_ts="1420403983" xil_pn:in_ck="5096383175840151230" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1420403983">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Ascensor.vhd"/>
@@ -128,27 +134,32 @@
       <outfile xil_pn:name="clk_divider.vhd"/>
       <outfile xil_pn:name="codificador.vhd"/>
       <outfile xil_pn:name="tb_Ascensor.vhd"/>
+      <outfile xil_pn:name="tb_BloqueadorPDeseado.vhd"/>
       <outfile xil_pn:name="tb_MaquinaDeEstados.vhd"/>
       <outfile xil_pn:name="tb_clk_divider.vhd"/>
       <outfile xil_pn:name="tb_codificador.vhd"/>
       <outfile xil_pn:name="tb_decodificador.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1420208190" xil_pn:in_ck="8299886857264769830" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4608289371813104758" xil_pn:start_ts="1420208180">
+    <transform xil_pn:end_ts="1420403988" xil_pn:in_ck="5096383175840151230" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3272320307855397280" xil_pn:start_ts="1420403983">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tb_Ascensor_beh.prj"/>
-      <outfile xil_pn:name="tb_Ascensor_isim_beh.exe"/>
+      <outfile xil_pn:name="tb_BloqueadorPDeseado_beh.prj"/>
+      <outfile xil_pn:name="tb_BloqueadorPDeseado_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1420208191" xil_pn:in_ck="-6681785086092923456" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="755871807397619100" xil_pn:start_ts="1420208190">
+    <transform xil_pn:end_ts="1420403988" xil_pn:in_ck="-5797759736195739098" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6164244627492696762" xil_pn:start_ts="1420403988">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="tb_Ascensor_isim_beh.wdb"/>
+      <outfile xil_pn:name="tb_BloqueadorPDeseado_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1420204177" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1420204177">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -178,12 +189,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1420204202" xil_pn:in_ck="6742947217481041008" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-4105999831304057508" xil_pn:start_ts="1420204177">
+    <transform xil_pn:end_ts="1420403691" xil_pn:in_ck="6742947217481041008" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-4105999831304057508" xil_pn:start_ts="1420403681">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="Ascensor.lso"/>
       <outfile xil_pn:name="Ascensor.ngc"/>

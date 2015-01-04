@@ -1,0 +1,2 @@
+vhdl isim_temp "BloqueadorPDeseado.vhd"
+vhdl isim_temp "tb_BloqueadorPDeseado.vhd"

@@ -77,7 +77,7 @@ BEGIN
 		wait for 100 ns;
 		reset_clk <= '0'; -- Comienza a funcionar
 		wait for 1500 ms;
-		reset_clk <= '1'; --
+		--reset_clk <= '1'; --
       wait;
    end process;
 

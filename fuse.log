@@ -1,33 +1,21 @@
-Running: D:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor_isim_beh.exe -prj C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor_beh.prj work.tb_Ascensor -timeprecision_vhdl 1ns 
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Daniel/Desktop/Proyecto_SED/tb_BloqueadorPDeseado_isim_beh.exe -prj C:/Users/Daniel/Desktop/Proyecto_SED/tb_BloqueadorPDeseado_beh.prj work.tb_BloqueadorPDeseado -timeprecision_vhdl 1ns 
 ISim P.15xf (signature 0xc3576ebc)
-Number of CPUs detected in this system: 8
-Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/MaquinaDeEstados.vhd" into library work
-Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Decodificador.vhd" into library work
-Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/codificador.vhd" into library work
-Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/clk_divider.vhd" into library work
-Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/BloqueadorPDeseado.vhd" into library work
-Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.vhd" into library work
-Parsing VHDL file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/BloqueadorPDeseado.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Desktop/Proyecto_SED/tb_BloqueadorPDeseado.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
-Compiling package numeric_std
-Compiling architecture behavioral of entity clk_divider [clk_divider_default]
-Compiling architecture dataflow of entity decodificador [decodificador_default]
-Compiling architecture dataflow of entity codificador [codificador_default]
 Compiling architecture behavioral of entity BloqueadorPDeseado [bloqueadorpdeseado_default]
-Compiling architecture behavioral of entity MaquinaDeEstados [maquinadeestados_default]
-Compiling architecture behavioral of entity Ascensor [ascensor_default]
-Compiling architecture behavior of entity tb_ascensor
+Compiling architecture behavior of entity tb_bloqueadorpdeseado
 Time Resolution for simulation is 1ns.
 Waiting for 1 sub-compilation(s) to finish...
-WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: El sistema no puede encontrar la ruta especificada, "isim\tb_Ascensor_isim_beh.exe.sim\libPortability.dll".
-Compiled 18 VHDL Units
-Built simulation executable C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor_isim_beh.exe
-Fuse Memory Usage: 34936 KB
-Fuse CPU Usage: 2124 ms
+Compiled 7 VHDL Units
+Built simulation executable C:/Users/Daniel/Desktop/Proyecto_SED/tb_BloqueadorPDeseado_isim_beh.exe
+Fuse Memory Usage: 32708 KB
+Fuse CPU Usage: 608 ms

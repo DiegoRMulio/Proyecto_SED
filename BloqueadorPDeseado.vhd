@@ -49,11 +49,6 @@ end process;
 ------LOGICA DE LA SALIDA-------
 
 	with Q_bus select
---	salidas <= 	"100" when S5,
---					"001" when S,
---					"010" when S3,
---					"100" when S4,
---					salidas when S1;		
 			salidas <=	Piso_Deseado_in	when S5,
 							salidas  			when S6;
 

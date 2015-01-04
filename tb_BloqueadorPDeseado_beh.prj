@@ -1,0 +1,2 @@
+vhdl work "BloqueadorPDeseado.vhd"
+vhdl work "tb_BloqueadorPDeseado.vhd"

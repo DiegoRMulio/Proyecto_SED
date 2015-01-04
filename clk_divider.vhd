@@ -1,7 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-
 entity clk_divider is
     Port ( 
 		  clk_in : in  STD_LOGIC;
