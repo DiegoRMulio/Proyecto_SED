@@ -1,0 +1,8 @@
+[Inputs]
+clk
+=SenalPisoActual[6:0]=
+=SenalPisoDeseado[6:0]=
+[Outputs]
+=LED[6:0]=
+[BiDir]
+=Enable_Display[3:0]=

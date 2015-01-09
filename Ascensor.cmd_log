@@ -105,3 +105,56 @@ map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Ascensor
 par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Ascensor.twx Ascensor.ncd -o Ascensor.twr Ascensor.pcf -ucf Ascensor.ucf 
 bitgen -intstyle ise -f Ascensor.ut Ascensor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Ascensor_map.ncd Ascensor.ngd Ascensor.pcf 
+par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Ascensor.twx Ascensor.ncd -o Ascensor.twr Ascensor.pcf -ucf Ascensor.ucf 
+bitgen -intstyle ise -f Ascensor.ut Ascensor.ncd 
+xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Ascensor_map.ncd Ascensor.ngd Ascensor.pcf 
+par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Ascensor.twx Ascensor.ncd -o Ascensor.twr Ascensor.pcf -ucf Ascensor.ucf 
+bitgen -intstyle ise -f Ascensor.ut Ascensor.ncd 
+xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Ascensor_map.ncd Ascensor.ngd Ascensor.pcf 
+par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Ascensor.twx Ascensor.ncd -o Ascensor.twr Ascensor.pcf -ucf Ascensor.ucf 
+bitgen -intstyle ise -f Ascensor.ut Ascensor.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Ascensor_map.ncd Ascensor.ngd Ascensor.pcf 
+par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Ascensor.twx Ascensor.ncd -o Ascensor.twr Ascensor.pcf -ucf Ascensor.ucf 
+bitgen -intstyle ise -f Ascensor.ut Ascensor.ncd 
+xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Ascensor_map.ncd Ascensor.ngd Ascensor.pcf 
+par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Ascensor_map.ncd Ascensor.ngd Ascensor.pcf 
+par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Ascensor_map.ncd Ascensor.ngd Ascensor.pcf 
+par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Ascensor.twx Ascensor.ncd -o Ascensor.twr Ascensor.pcf -ucf Ascensor.ucf 
+bitgen -intstyle ise -f Ascensor.ut Ascensor.ncd 
+xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
+xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Ascensor_map.ncd Ascensor.ngd Ascensor.pcf 
+par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Ascensor.twx Ascensor.ncd -o Ascensor.twr Ascensor.pcf -ucf Ascensor.ucf 
+bitgen -intstyle ise -f Ascensor.ut Ascensor.ncd 
+xst -intstyle ise -ifn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.xst" -ofn "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5 Ascensor.ngc Ascensor.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o Ascensor_map.ncd Ascensor.ngd Ascensor.pcf 
+par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Ascensor.twx Ascensor.ncd -o Ascensor.twr Ascensor.pcf -ucf Ascensor.ucf 
+bitgen -intstyle ise -f Ascensor.ut Ascensor.ncd 

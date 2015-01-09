@@ -45,46 +45,51 @@ Setup/Hold to clock clk
                      |Max Setup to|Max Hold to |                  | Clock  |
 Source               | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ---------------------+------------+------------+------------------+--------+
-Piso_Actual_Sensor<0>|    1.372(F)|    0.252(F)|clk_BUFGP         |   0.000|
-Piso_Actual_Sensor<1>|    1.225(F)|    0.359(F)|clk_BUFGP         |   0.000|
-Piso_Actual_Sensor<2>|    1.011(F)|    0.628(F)|clk_BUFGP         |   0.000|
-Piso_Actual_Sensor<3>|    0.739(F)|    0.685(F)|clk_BUFGP         |   0.000|
-Piso_Deseado<0>      |    1.755(F)|    0.067(F)|clk_BUFGP         |   0.000|
-Piso_Deseado<1>      |    1.489(F)|    0.306(F)|clk_BUFGP         |   0.000|
-Piso_Deseado<2>      |    1.317(F)|    0.624(F)|clk_BUFGP         |   0.000|
+Piso_Actual_Sensor<0>|    1.072(F)|    0.520(F)|clk_BUFGP         |   0.000|
+Piso_Actual_Sensor<1>|    0.836(F)|    0.654(F)|clk_BUFGP         |   0.000|
+Piso_Actual_Sensor<2>|    1.032(F)|    0.578(F)|clk_BUFGP         |   0.000|
+Piso_Actual_Sensor<3>|    0.738(F)|    0.686(F)|clk_BUFGP         |   0.000|
+Piso_Deseado<0>      |    1.039(F)|    0.653(F)|clk_BUFGP         |   0.000|
+Piso_Deseado<1>      |    1.036(F)|    0.621(F)|clk_BUFGP         |   0.000|
+Piso_Deseado<2>      |    1.345(F)|    0.420(F)|clk_BUFGP         |   0.000|
 Piso_Deseado<3>      |    0.728(F)|    0.693(F)|clk_BUFGP         |   0.000|
 ---------------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
-----------------------+------------+------------------+--------+
-                      | clk (edge) |                  | Clock  |
-Destination           |   to PAD   |Internal Clock(s) | Phase  |
-----------------------+------------+------------------+--------+
-Piso_Actual_Display<0>|    8.984(F)|clk_BUFGP         |   0.000|
-Piso_Actual_Display<1>|    9.940(F)|clk_BUFGP         |   0.000|
-Piso_Actual_Display<2>|    8.679(F)|clk_BUFGP         |   0.000|
-Piso_Actual_Display<3>|   10.106(F)|clk_BUFGP         |   0.000|
-Piso_Actual_Display<4>|    9.285(F)|clk_BUFGP         |   0.000|
-Piso_Actual_Display<6>|   10.180(F)|clk_BUFGP         |   0.000|
-----------------------+------------+------------------+--------+
+-----------------+------------+------------------+--------+
+                 | clk (edge) |                  | Clock  |
+Destination      |   to PAD   |Internal Clock(s) | Phase  |
+-----------------+------------+------------------+--------+
+Enable_Display<0>|    8.852(R)|clk_BUFGP         |   0.000|
+Enable_Display<1>|    9.053(R)|clk_BUFGP         |   0.000|
+Enable_Display<2>|    9.253(R)|clk_BUFGP         |   0.000|
+Enable_Display<3>|    9.414(R)|clk_BUFGP         |   0.000|
+LED_Display<0>   |    8.671(R)|clk_BUFGP         |   0.000|
+LED_Display<1>   |    9.059(R)|clk_BUFGP         |   0.000|
+LED_Display<2>   |    8.362(R)|clk_BUFGP         |   0.000|
+LED_Display<3>   |    8.964(R)|clk_BUFGP         |   0.000|
+LED_Display<4>   |    8.350(R)|clk_BUFGP         |   0.000|
+LED_Display<5>   |    9.146(R)|clk_BUFGP         |   0.000|
+LED_Display<6>   |    9.226(R)|clk_BUFGP         |   0.000|
+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.031|         |         |    2.047|
+clk            |    5.868|    2.710|         |    1.914|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Jan 09 11:37:18 2015 
+Analysis completed Fri Jan 09 13:51:26 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 141 MB
+Peak Memory Usage: 142 MB
 
 
 

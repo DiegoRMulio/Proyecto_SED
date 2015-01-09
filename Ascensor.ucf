@@ -1,13 +1,13 @@
 
 # PlanAhead Generated IO constraints 
 
-NET "Piso_Actual_Display[6]" IOSTANDARD = LVCMOS33;
-NET "Piso_Actual_Display[5]" IOSTANDARD = LVCMOS33;
-NET "Piso_Actual_Display[4]" IOSTANDARD = LVCMOS33;
-NET "Piso_Actual_Display[3]" IOSTANDARD = LVCMOS33;
-NET "Piso_Actual_Display[2]" IOSTANDARD = LVCMOS33;
-NET "Piso_Actual_Display[1]" IOSTANDARD = LVCMOS33;
-NET "Piso_Actual_Display[0]" IOSTANDARD = LVCMOS33;
+NET "LED_Display[6]" IOSTANDARD = LVCMOS33;
+NET "LED_Display[5]" IOSTANDARD = LVCMOS33;
+NET "LED_Display[4]" IOSTANDARD = LVCMOS33;
+NET "LED_Display[3]" IOSTANDARD = LVCMOS33;
+NET "LED_Display[2]" IOSTANDARD = LVCMOS33;
+NET "LED_Display[1]" IOSTANDARD = LVCMOS33;
+NET "LED_Display[0]" IOSTANDARD = LVCMOS33;
 NET "Motor[1]" IOSTANDARD = LVCMOS33;
 NET "Motor[0]" IOSTANDARD = LVCMOS33;
 NET "Piso_Actual_Sensor[3]" IOSTANDARD = LVCMOS33;
@@ -21,30 +21,43 @@ NET "Piso_Deseado[0]" IOSTANDARD = LVCMOS33;
 NET "clk" IOSTANDARD = LVCMOS33;
 NET "reset" IOSTANDARD = LVCMOS33;
 NET "Puerta" IOSTANDARD = LVCMOS33;
+NET "Enable_Display[3]" IOSTANDARD = LVCMOS33;
+NET "Enable_Display[2]" IOSTANDARD = LVCMOS33;
+NET "Enable_Display[1]" IOSTANDARD = LVCMOS33;
+NET "Enable_Display[0]" IOSTANDARD = LVCMOS33;
 
 # PlanAhead Generated physical constraints 
 
-NET "Piso_Deseado[0]" LOC = F12;
-NET "Piso_Deseado[1]" LOC = G12;
-NET "Piso_Deseado[2]" LOC = H14;
-NET "Piso_Deseado[3]" LOC = H13;
+NET "Piso_Deseado[0]" LOC = L14;
+NET "Piso_Deseado[1]" LOC = L13;
+NET "Piso_Deseado[2]" LOC = M14;
+NET "Piso_Deseado[3]" LOC = M13;
 
-NET "Piso_Actual_Sensor[0]" LOC = J14;
-NET "Piso_Actual_Sensor[1]" LOC = J13;
-NET "Piso_Actual_Sensor[2]" LOC = K14;
-NET "Piso_Actual_Sensor[3]" LOC = K13;
+NET "Piso_Actual_Sensor[0]" LOC = K13;
+NET "Piso_Actual_Sensor[1]" LOC = K14;
+NET "Piso_Actual_Sensor[2]" LOC = J13;
+NET "Piso_Actual_Sensor[3]" LOC = J14;
 
-NET "Piso_Actual_Display[6]" LOC = E14;
-NET "Piso_Actual_Display[5]" LOC = G13;
-NET "Piso_Actual_Display[4]" LOC = N15;
-NET "Piso_Actual_Display[3]" LOC = P15;
-NET "Piso_Actual_Display[2]" LOC = R16;
-NET "Piso_Actual_Display[1]" LOC = F13;
-NET "Piso_Actual_Display[0]" LOC = N16;
+NET "LED_Display[6]" LOC = E14;
+NET "LED_Display[5]" LOC = G13;
+NET "LED_Display[4]" LOC = N15;
+NET "LED_Display[3]" LOC = P15;
+NET "LED_Display[2]" LOC = R16;
+NET "LED_Display[1]" LOC = F13;
+NET "LED_Display[0]" LOC = N16;
+
+NET "Enable_Display[3]" LOC =E13;
+NET "Enable_Display[2]" LOC =F14;
+NET "Enable_Display[1]" LOC =G14;
+NET "Enable_Display[0]" LOC =D14;
+
 NET "Motor[0]" LOC = K12;
 NET "Motor[1]" LOC = P14;
 NET "Puerta" LOC = P11;
            
 
-NET "reset" LOC = L14;
+NET "reset" LOC = F12;
 NET "clk" LOC = T9;
+
+
+

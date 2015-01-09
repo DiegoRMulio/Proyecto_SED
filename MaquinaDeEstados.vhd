@@ -31,7 +31,7 @@ begin
 		else 
 			Q_bus <= D_bus;
 		end if;
-		end if;
+	end if;
 end process;
 ----LOGICA DEL ESTADO SIGUIENTE---
 process(Q_bus,reset,Piso_Deseado,Piso_Actual_in)
@@ -53,6 +53,11 @@ begin
 				else
 					D_bus <= S1;
 				end if;
+				
+--				if reset = '1' then
+--					D_bus <= S0;
+--				end if;
+				
 		when S2 =>
 					D_bus <= S1;
 	
