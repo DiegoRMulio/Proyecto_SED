@@ -33,7 +33,8 @@ COMPONENT decodificador
 ---------------------------------------------------	
 COMPONENT codificador
 	PORT(
-		cod_in : IN std_logic_vector(3 downto 0);          
+		cod_in : IN std_logic_vector(3 downto 0); 
+			CLK: IN STD_LOGIC;
 		cod_out : OUT std_logic_vector(1 downto 0)
 		);
 END COMPONENT;
@@ -87,11 +88,13 @@ begin
 ---------------------------------------------------	
 Inst_codificador_PD: codificador PORT MAP(
 		cod_in =>Piso_Deseado ,
+		CLK=> CLK,
 		cod_out =>Piso_Deseado_BBLOQ 
 	);
 ---------------------------------------------------	
 Inst_codificador_PA: codificador PORT MAP(
 		cod_in =>Piso_Actual_Sensor ,
+		CLK=> CLK,
 		cod_out =>Piso_Actual_BFSM 
 	);	
 ---------------------------------------------------

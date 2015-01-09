@@ -1,1 +1,2 @@
 vhdtdtfi -prj Ascensor -o C:/Users/sed/Desktop/Ascensor/Ascensor/codificador.vhi -module codificador -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work codificador.vhd 
+vhdtdtfi -prj Ascensor -o C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhi -module codificador -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work codificador.vhd 

@@ -105,19 +105,18 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/Daniel/Desktop/Proyecto_SED/clk_divider.vhd" in Library work.
-Entity <clk_divider> compiled.
-Entity <clk_divider> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity clk_divider is up to date.
 Compiling vhdl file "C:/Users/Daniel/Desktop/Proyecto_SED/Decodificador.vhd" in Library work.
 Architecture dataflow of Entity decodificador is up to date.
 Compiling vhdl file "C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhd" in Library work.
 Architecture dataflow of Entity codificador is up to date.
 Compiling vhdl file "C:/Users/Daniel/Desktop/Proyecto_SED/BloqueadorPDeseado.vhd" in Library work.
-Entity <bloqueadorpdeseado> compiled.
-Entity <bloqueadorpdeseado> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity bloqueadorpdeseado is up to date.
 Compiling vhdl file "C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.vhd" in Library work.
 Architecture behavioral of Entity maquinadeestados is up to date.
 Compiling vhdl file "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd" in Library work.
-Architecture behavioral of Entity ascensor is up to date.
+Entity <ascensor> compiled.
+Entity <ascensor> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -148,6 +147,8 @@ Analyzing Entity <decodificador> in library <work> (Architecture <dataflow>).
 Entity <decodificador> analyzed. Unit <decodificador> generated.
 
 Analyzing Entity <codificador> in library <work> (Architecture <dataflow>).
+WARNING:Xst:819 - "C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhd" line 13: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <cod_in>
 Entity <codificador> analyzed. Unit <codificador> generated.
 
 Analyzing Entity <BloqueadorPDeseado> in library <work> (Architecture <behavioral>).
@@ -183,6 +184,7 @@ Unit <decodificador> synthesized.
 
 Synthesizing Unit <codificador>.
     Related source file is "C:/Users/Daniel/Desktop/Proyecto_SED/codificador.vhd".
+WARNING:Xst:737 - Found 2-bit latch for signal <cod_out_s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 Unit <codificador> synthesized.
 
 
@@ -240,8 +242,8 @@ Macro Statistics
  32-bit up counter                                     : 1
 # Registers                                            : 2
  1-bit register                                        : 2
-# Latches                                              : 2
- 2-bit latch                                           : 1
+# Latches                                              : 4
+ 2-bit latch                                           : 3
  4-bit latch                                           : 1
 # Comparators                                          : 3
  2-bit comparator equal                                : 1
@@ -277,8 +279,8 @@ Macro Statistics
  32-bit up counter                                     : 1
 # Registers                                            : 2
  Flip-Flops                                            : 2
-# Latches                                              : 2
- 2-bit latch                                           : 1
+# Latches                                              : 4
+ 2-bit latch                                           : 3
  4-bit latch                                           : 1
 # Comparators                                          : 3
  2-bit comparator equal                                : 1
@@ -335,22 +337,23 @@ Design Statistics
 # IOs                              : 20
 
 Cell Usage :
-# BELS                             : 165
+# BELS                             : 170
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 4
 #      LUT1                        : 31
-#      LUT2                        : 33
+#      LUT2                        : 38
 #      LUT3                        : 2
-#      LUT4                        : 20
+#      LUT4                        : 15
 #      MUXCY                       : 39
-#      MUXF5                       : 3
+#      MUXF5                       : 7
 #      VCC                         : 1
 #      XORCY                       : 32
-# FlipFlops/Latches                : 45
+# FlipFlops/Latches                : 49
 #      FDC                         : 32
 #      FDCE                        : 1
 #      FDR                         : 5
 #      FDS                         : 1
+#      LD                          : 4
 #      LD_1                        : 6
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -364,9 +367,9 @@ Device utilization summary:
 
 Selected Device : 3s200ft256-5 
 
- Number of Slices:                       49  out of   1920     2%  
- Number of Slice Flip Flops:             42  out of   3840     1%  
- Number of 4 input LUTs:                 89  out of   3840     2%  
+ Number of Slices:                       50  out of   1920     2%  
+ Number of Slice Flip Flops:             46  out of   3840     1%  
+ Number of 4 input LUTs:                 90  out of   3840     2%  
  Number of IOs:                          20
  Number of bonded IOBs:                  20  out of    173    11%  
     IOB Flip Flops:                       3
@@ -393,7 +396,7 @@ Clock Information:
 ------------------------------------+-------------------------------------------+-------+
 Clock Signal                        | Clock buffer(FF name)                     | Load  |
 ------------------------------------+-------------------------------------------+-------+
-clk                                 | BUFGP                                     | 34    |
+clk                                 | BUFGP                                     | 38    |
 Inst_BloqueadorPDeseado/Q_bus_0     | NONE(Inst_BloqueadorPDeseado/salidas_1)   | 2     |
 Inst_MaquinaDeEstados/Q_bus_FSM_FFd4| NONE(Inst_MaquinaDeEstados/salidas_3)     | 4     |
 Inst_clk_divider/temporal           | NONE(Inst_MaquinaDeEstados/Q_bus_FSM_FFd3)| 5     |
@@ -413,9 +416,9 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 6.482ns (Maximum Frequency: 154.278MHz)
-   Minimum input arrival time before clock: 4.333ns
-   Maximum output required time after clock: 6.141ns
-   Maximum combinational path delay: 8.030ns
+   Minimum input arrival time before clock: 3.211ns
+   Maximum output required time after clock: 7.900ns
+   Maximum combinational path delay: No path found
 
 Timing Detail:
 --------------
@@ -424,7 +427,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.482ns (frequency: 154.278MHz)
-  Total number of paths / destination ports: 1585 / 34
+  Total number of paths / destination ports: 1589 / 38
 -------------------------------------------------------------------------
 Delay:               6.482ns (Levels of Logic = 33)
   Source:            Inst_clk_divider/counter_1 (FF)
@@ -477,10 +480,10 @@ Delay:               6.482ns (Levels of Logic = 33)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_clk_divider/temporal'
-  Clock period: 2.934ns (frequency: 340.803MHz)
-  Total number of paths / destination ports: 7 / 4
+  Clock period: 2.882ns (frequency: 346.933MHz)
+  Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Delay:               2.934ns (Levels of Logic = 1)
+Delay:               2.882ns (Levels of Logic = 1)
   Source:            Inst_MaquinaDeEstados/Q_bus_FSM_FFd4 (FF)
   Destination:       Inst_MaquinaDeEstados/Q_bus_FSM_FFd4 (FF)
   Source Clock:      Inst_clk_divider/temporal rising
@@ -490,54 +493,52 @@ Delay:               2.934ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             11   0.626   0.972  Inst_MaquinaDeEstados/Q_bus_FSM_FFd4 (Inst_MaquinaDeEstados/Q_bus_FSM_FFd4)
+     FDR:C->Q              8   0.626   0.921  Inst_MaquinaDeEstados/Q_bus_FSM_FFd4 (Inst_MaquinaDeEstados/Q_bus_FSM_FFd4)
      INV:I->O              1   0.479   0.681  Inst_MaquinaDeEstados/Q_bus_FSM_FFd4-In1_INV_0 (Inst_MaquinaDeEstados/Q_bus_FSM_FFd4-In)
      FDR:D                     0.176          Inst_MaquinaDeEstados/Q_bus_FSM_FFd4
     ----------------------------------------
-    Total                      2.934ns (1.281ns logic, 1.653ns route)
-                                       (43.7% logic, 56.3% route)
+    Total                      2.882ns (1.281ns logic, 1.601ns route)
+                                       (44.4% logic, 55.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_BloqueadorPDeseado/Q_bus_0'
-  Total number of paths / destination ports: 8 / 2
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 26 / 4
 -------------------------------------------------------------------------
-Offset:              2.410ns (Levels of Logic = 2)
-  Source:            Piso_Deseado<2> (PAD)
-  Destination:       Inst_BloqueadorPDeseado/salidas_1 (LATCH)
-  Destination Clock: Inst_BloqueadorPDeseado/Q_bus_0 rising
+Offset:              2.758ns (Levels of Logic = 3)
+  Source:            Piso_Actual_Sensor<1> (PAD)
+  Destination:       Inst_codificador_PA/cod_out_s_1 (LATCH)
+  Destination Clock: clk falling
 
-  Data Path: Piso_Deseado<2> to Inst_BloqueadorPDeseado/salidas_1
+  Data Path: Piso_Actual_Sensor<1> to Inst_codificador_PA/cod_out_s_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.715   1.040  Piso_Deseado_2_IBUF (Piso_Deseado_2_IBUF)
-     LUT4:I0->O            1   0.479   0.000  Inst_codificador_PD/cod_out<1>1 (Piso_Deseado_BBLOQ<1>)
-     LD_1:D                    0.176          Inst_BloqueadorPDeseado/salidas_1
+     IBUF:I->O             4   0.715   1.074  Piso_Actual_Sensor_1_IBUF (Piso_Actual_Sensor_1_IBUF)
+     LUT2:I0->O            1   0.479   0.000  Inst_codificador_PA/cod_out_s_mux0004<0>1 (Inst_codificador_PA/cod_out_s_mux0004<0>1)
+     MUXF5:I1->O           1   0.314   0.000  Inst_codificador_PA/cod_out_s_mux0004<0>_f5 (Inst_codificador_PA/cod_out_s_mux0004<0>)
+     LD:D                      0.176          Inst_codificador_PA/cod_out_s_1
     ----------------------------------------
-    Total                      2.410ns (1.370ns logic, 1.040ns route)
-                                       (56.8% logic, 43.2% route)
+    Total                      2.758ns (1.684ns logic, 1.074ns route)
+                                       (61.0% logic, 39.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_clk_divider/temporal'
-  Total number of paths / destination ports: 41 / 8
+  Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
-Offset:              4.333ns (Levels of Logic = 4)
-  Source:            Piso_Actual_Sensor<2> (PAD)
+Offset:              3.211ns (Levels of Logic = 1)
+  Source:            reset (PAD)
   Destination:       Inst_MaquinaDeEstados/Q_bus_FSM_FFd3 (FF)
   Destination Clock: Inst_clk_divider/temporal rising
 
-  Data Path: Piso_Actual_Sensor<2> to Inst_MaquinaDeEstados/Q_bus_FSM_FFd3
+  Data Path: reset to Inst_MaquinaDeEstados/Q_bus_FSM_FFd3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             6   0.715   1.148  Piso_Actual_Sensor_2_IBUF (Piso_Actual_Sensor_2_IBUF)
-     LUT4:I0->O            6   0.479   1.023  Inst_codificador_PA/cod_out<1>1 (Piso_Actual_BFSM<1>)
-     LUT4:I1->O            1   0.479   0.000  Inst_MaquinaDeEstados/Q_bus_FSM_FFd3-In1 (Inst_MaquinaDeEstados/Q_bus_FSM_FFd3-In1)
-     MUXF5:I1->O           1   0.314   0.000  Inst_MaquinaDeEstados/Q_bus_FSM_FFd3-In_f5 (Inst_MaquinaDeEstados/Q_bus_FSM_FFd3-In)
-     FDR:D                     0.176          Inst_MaquinaDeEstados/Q_bus_FSM_FFd3
+     IBUF:I->O            38   0.715   1.604  reset_IBUF (reset_IBUF)
+     FDR:R                     0.892          Inst_MaquinaDeEstados/Q_bus_FSM_FFd3
     ----------------------------------------
-    Total                      4.333ns (2.163ns logic, 2.170ns route)
-                                       (49.9% logic, 50.1% route)
+    Total                      3.211ns (1.607ns logic, 1.604ns route)
+                                       (50.0% logic, 50.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_MaquinaDeEstados/Q_bus_FSM_FFd4'
@@ -559,35 +560,36 @@ Offset:              6.141ns (Levels of Logic = 1)
                                        (88.9% logic, 11.1% route)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 24 / 6
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 10 / 6
 -------------------------------------------------------------------------
-Delay:               8.030ns (Levels of Logic = 3)
-  Source:            Piso_Actual_Sensor<1> (PAD)
-  Destination:       Piso_Actual_Display<2> (PAD)
+Offset:              7.900ns (Levels of Logic = 2)
+  Source:            Inst_codificador_PA/cod_out_s_1 (LATCH)
+  Destination:       Piso_Actual_Display<6> (PAD)
+  Source Clock:      clk falling
 
-  Data Path: Piso_Actual_Sensor<1> to Piso_Actual_Display<2>
+  Data Path: Inst_codificador_PA/cod_out_s_1 to Piso_Actual_Display<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             6   0.715   1.148  Piso_Actual_Sensor_1_IBUF (Piso_Actual_Sensor_1_IBUF)
-     LUT4:I0->O            4   0.479   0.779  Inst_codificador_PA/cod_out<0>1 (Piso_Actual_Display_2_OBUF)
-     OBUF:I->O                 4.909          Piso_Actual_Display_2_OBUF (Piso_Actual_Display<2>)
+     LD:G->Q               8   0.551   1.216  Inst_codificador_PA/cod_out_s_1 (Inst_codificador_PA/cod_out_s_1)
+     LUT2:I0->O            2   0.479   0.745  Piso_Actual_Display<6>1 (Piso_Actual_Display_6_OBUF)
+     OBUF:I->O                 4.909          Piso_Actual_Display_6_OBUF (Piso_Actual_Display<6>)
     ----------------------------------------
-    Total                      8.030ns (6.103ns logic, 1.927ns route)
-                                       (76.0% logic, 24.0% route)
+    Total                      7.900ns (5.939ns logic, 1.961ns route)
+                                       (75.2% logic, 24.8% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.65 secs
+Total CPU time to Xst completion: 6.68 secs
  
 --> 
 
-Total memory usage is 255172 kilobytes
+Total memory usage is 255236 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    5 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 

@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file codificador.vhd -- 18:56:55 11/27/2014
+-- VHDL Instantiation Created from source file codificador.vhd -- 10:30:08 01/09/2015
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types
