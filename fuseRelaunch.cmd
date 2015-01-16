@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Daniel/Desktop/Proyecto_SED/tb_BloqueadorPDeseado_isim_beh.exe" -prj "C:/Users/Daniel/Desktop/Proyecto_SED/tb_BloqueadorPDeseado_beh.prj" "work.tb_BloqueadorPDeseado" -timeprecision_vhdl "1ns" 
+-intstyle "ise" -incremental -o "C:/Users/Daniel/Desktop/Proyecto_SED/TBDecodificadorPD_isim_beh.exe" -prj "C:/Users/Daniel/Desktop/Proyecto_SED/TBDecodificadorPD_beh.prj" "work.TBDecodificadorPD" -timeprecision_vhdl "1ns" 

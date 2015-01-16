@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: Ascensor.prj
 
@@ -115,8 +115,7 @@ Architecture behavioral of Entity bloqueadorpdeseado is up to date.
 Compiling vhdl file "C:/Users/Daniel/Desktop/Proyecto_SED/MaquinaDeEstados.vhd" in Library work.
 Architecture behavioral of Entity maquinadeestados is up to date.
 Compiling vhdl file "C:/Users/Daniel/Desktop/Proyecto_SED/ModuloDisplay.vhd" in Library work.
-Entity <decodificadorpd> compiled.
-Entity <decodificadorpd> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity decodificadorpd is up to date.
 Compiling vhdl file "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.vhd" in Library work.
 Architecture behavioral of Entity ascensor is up to date.
 
@@ -585,11 +584,11 @@ Offset:              6.507ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.41 secs
+Total CPU time to Xst completion: 6.99 secs
  
 --> 
 
-Total memory usage is 257092 kilobytes
+Total memory usage is 257284 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    7 (   0 filtered)
