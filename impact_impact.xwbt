@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=C:\Users\Daniel\Desktop\Proyecto_SED\impact.xsl
-OUTFILE=C:\Users\Daniel\Desktop\Proyecto_SED\impact.xsl
-FAMILY=Multiple
-PART=Multiple
-WORKINGDIR=C:\Users\Daniel\Desktop\Proyecto_SED
+INFILE=C:\Users\Diego\Documents\GitHub\Proyecto_SED\impact.xsl
+OUTFILE=C:\Users\Diego\Documents\GitHub\Proyecto_SED\impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=C:\Users\Diego\Documents\GitHub\Proyecto_SED
 LICENSE=iMPACT
 USER_INFO=iMPACT

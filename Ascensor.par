@@ -1,13 +1,13 @@
 Release 14.1 par P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-DANIEL-WINDOWS::  Fri Jan 09 13:51:18 2015
+DIEGO::  Sun Jan 18 19:27:34 2015
 
 par -w -intstyle ise -ol high -t 1 Ascensor_map.ncd Ascensor.ncd Ascensor.pcf 
 
 
 Constraints file: Ascensor.pcf.
-Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx\14.1\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '3s200.nph' in environment D:\Xilinx\14.1\ISE_DS\ISE\.
    "Ascensor" is an NCD, version 3.2, device xc3s200, package ft256, speed -5
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
@@ -38,46 +38,46 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 1 secs 
-Total CPU  time at the beginning of Placer: 1 secs 
+Total REAL time at the beginning of Placer: 3 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:e4fe55d5) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:e4fe55d5) REAL time: 5 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:e4fe55d5) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:e4fe55d5) REAL time: 5 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:e4fe55d5) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:e4fe55d5) REAL time: 5 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:ecd517d5) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:ecd517d5) REAL time: 5 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:ecd517d5) REAL time: 1 secs 
+Phase 5.36  Local Placement Optimization (Checksum:ecd517d5) REAL time: 5 secs 
 
 Phase 6.8  Global Placement
 ..
 ..
-Phase 6.8  Global Placement (Checksum:81855a04) REAL time: 2 secs 
+Phase 6.8  Global Placement (Checksum:7d11346d) REAL time: 8 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:81855a04) REAL time: 2 secs 
+Phase 7.5  Local Placement Optimization (Checksum:7d11346d) REAL time: 8 secs 
 
 Phase 8.18  Placement Optimization
-Phase 8.18  Placement Optimization (Checksum:843b7174) REAL time: 2 secs 
+Phase 8.18  Placement Optimization (Checksum:7ef1e759) REAL time: 9 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:843b7174) REAL time: 2 secs 
+Phase 9.5  Local Placement Optimization (Checksum:7ef1e759) REAL time: 9 secs 
 
-Total REAL time to Placer completion: 2 secs 
-Total CPU  time to Placer completion: 2 secs 
+Total REAL time to Placer completion: 9 secs 
+Total CPU  time to Placer completion: 7 secs 
 Writing design to file Ascensor.ncd
 
 
@@ -85,34 +85,34 @@ Writing design to file Ascensor.ncd
 Starting Router
 
 
-Phase  1  : 416 unrouted;      REAL time: 2 secs 
+Phase  1  : 416 unrouted;      REAL time: 10 secs 
 
-Phase  2  : 369 unrouted;      REAL time: 2 secs 
+Phase  2  : 369 unrouted;      REAL time: 10 secs 
 
-Phase  3  : 91 unrouted;      REAL time: 2 secs 
+Phase  3  : 85 unrouted;      REAL time: 10 secs 
 
-Phase  4  : 101 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 90 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
 Updating file: Ascensor.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
-WARNING:Route:455 - CLK Net:Inst_clk_divider/temporal may have excessive skew because 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+WARNING:Route:455 - CLK Net:Inst_clk_Divider/temporal may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:Inst_MaquinaDeEstados/Q_bus_FSM_FFd4 may have excessive skew because 
       0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 4 secs 
-Total CPU time to Router completion: 4 secs 
+Total REAL time to Router completion: 14 secs 
+Total CPU time to Router completion: 11 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -135,7 +135,7 @@ Generating Clock Report
 |Inst_MaquinaDeEstado |              |      |      |            |             |
 |    s/Q_bus_FSM_FFd4 |         Local|      |    8 |  0.129     |  2.435      |
 +---------------------+--------------+------+------+------------+-------------+
-|Inst_clk_divider/tem |              |      |      |            |             |
+|Inst_clk_Divider/tem |              |      |      |            |             |
 |               poral |         Local|      |    5 |  0.026     |  2.144      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_BloqueadorPDese |              |      |      |            |             |
@@ -159,11 +159,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.868ns|     N/A|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.940ns|     N/A|           0
   _BUFGP                                    | HOLD        |     0.806ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.172ns|     N/A|           0
-  t_clk_divider/temporal                    | HOLD        |     0.863ns|            |       0|           0
+  t_clk_Divider/temporal                    | HOLD        |     0.863ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -179,10 +179,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 4 secs 
-Total CPU time to PAR completion: 4 secs 
+Total REAL time to PAR completion: 15 secs 
+Total CPU time to PAR completion: 12 secs 
 
-Peak Memory Usage:  253 MB
+Peak Memory Usage:  235 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

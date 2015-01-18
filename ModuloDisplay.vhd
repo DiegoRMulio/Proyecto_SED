@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_arith.ALL; 
 use IEEE.STD_LOGIC_unsigned.ALL;
 
-entity DecodificadorPD is
+entity ModuloDisplay is
 	port(
 		clk : in std_logic;
 		Enable_Display : inout std_logic_vector (3 downto 0);
@@ -12,9 +12,9 @@ entity DecodificadorPD is
 		SenalPisoDeseado : in std_logic_vector(6 downto 0);
 		LED : out std_logic_vector(6 downto 0)
 	);
-end DecodificadorPD;
+end ModuloDisplay;
 
-architecture Behavioral of DecodificadorPD is
+architecture Behavioral of ModuloDisplay is
 
 signal CTR : STD_LOGIC_VECTOR(12 downto 0);
 begin			

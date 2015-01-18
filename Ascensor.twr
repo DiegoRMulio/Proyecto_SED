@@ -2,7 +2,7 @@
 Release 14.1 Trace  (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+D:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
 -n 3 -fastpaths -xml Ascensor.twx Ascensor.ncd -o Ascensor.twr Ascensor.pcf
 -ucf Ascensor.ucf
 
@@ -45,9 +45,9 @@ Setup/Hold to clock clk
                      |Max Setup to|Max Hold to |                  | Clock  |
 Source               | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ---------------------+------------+------------+------------------+--------+
-Piso_Actual_Sensor<0>|    1.072(F)|    0.520(F)|clk_BUFGP         |   0.000|
+Piso_Actual_Sensor<0>|    1.303(F)|    0.520(F)|clk_BUFGP         |   0.000|
 Piso_Actual_Sensor<1>|    0.836(F)|    0.654(F)|clk_BUFGP         |   0.000|
-Piso_Actual_Sensor<2>|    1.032(F)|    0.578(F)|clk_BUFGP         |   0.000|
+Piso_Actual_Sensor<2>|    0.919(F)|    0.578(F)|clk_BUFGP         |   0.000|
 Piso_Actual_Sensor<3>|    0.738(F)|    0.686(F)|clk_BUFGP         |   0.000|
 Piso_Deseado<0>      |    1.039(F)|    0.653(F)|clk_BUFGP         |   0.000|
 Piso_Deseado<1>      |    1.036(F)|    0.621(F)|clk_BUFGP         |   0.000|
@@ -61,8 +61,8 @@ Clock clk to Pad
 Destination      |   to PAD   |Internal Clock(s) | Phase  |
 -----------------+------------+------------------+--------+
 Enable_Display<0>|    8.852(R)|clk_BUFGP         |   0.000|
-Enable_Display<1>|    9.053(R)|clk_BUFGP         |   0.000|
-Enable_Display<2>|    9.253(R)|clk_BUFGP         |   0.000|
+Enable_Display<1>|    9.029(R)|clk_BUFGP         |   0.000|
+Enable_Display<2>|    9.280(R)|clk_BUFGP         |   0.000|
 Enable_Display<3>|    9.414(R)|clk_BUFGP         |   0.000|
 LED_Display<0>   |    8.671(R)|clk_BUFGP         |   0.000|
 LED_Display<1>   |    9.059(R)|clk_BUFGP         |   0.000|
@@ -78,18 +78,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.868|    2.710|         |    1.914|
+clk            |    5.940|    2.736|         |    2.020|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Jan 09 13:51:26 2015 
+Analysis completed Sun Jan 18 19:27:57 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 142 MB
+Peak Memory Usage: 153 MB
 
 
 

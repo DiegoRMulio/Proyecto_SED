@@ -1,11 +1,11 @@
 Release 14.1 ngdbuild P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+Command Line: D:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -nt timestamp -uc Ascensor.ucf -p xc3s200-ft256-5
 Ascensor.ngc Ascensor.ngd
 
-Reading NGO file "C:/Users/Daniel/Desktop/Proyecto_SED/Ascensor.ngc" ...
+Reading NGO file "C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,10 +27,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 150092 kilobytes
+Total memory usage is 172332 kilobytes
 
 Writing NGD file "Ascensor.ngd" ...
-Total REAL time to NGDBUILD completion:  4 sec
-Total CPU time to NGDBUILD completion:   4 sec
+Total REAL time to NGDBUILD completion:  11 sec
+Total CPU time to NGDBUILD completion:   10 sec
 
 Writing NGDBUILD log file "Ascensor.bld"...

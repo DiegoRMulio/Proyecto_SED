@@ -50,13 +50,13 @@ END COMPONENT;
 		);
 	END COMPONENT;
 ---------------------------------------------------	
-
 	COMPONENT MaquinaDeEstados
 	PORT(
 		clk_Maq : IN std_logic;
 		reset : IN std_logic;
-		Piso_Deseado : IN std_logic_vector(1 downto 0);
+		Piso_Deseado_in : IN std_logic_vector(1 downto 0);
 		Piso_Actual_in : IN std_logic_vector(1 downto 0);          
+		Piso_Deseado_out : OUT std_logic_vector(1 downto 0);
 		Piso_Actual_out : OUT std_logic_vector(1 downto 0);
 		Puerta : OUT std_logic;
 		Motor : OUT std_logic_vector(1 downto 0);
@@ -64,7 +64,7 @@ END COMPONENT;
 		);
 	END COMPONENT;
 ---------------------------------------------------
-	COMPONENT DecodificadorPD
+	COMPONENT ModuloDisplay
 	PORT(
 		clk : IN std_logic;
 		SenalPisoActual : IN std_logic_vector(6 downto 0);
@@ -78,7 +78,8 @@ type mis_estados is (S0,S1,S2,S3);
 signal Q_bus, D_bus : mis_estados;
 signal salidas: STD_LOGIC_VECTOR (2 downto 0);
 signal Piso_Deseado_BBLOQ: STD_LOGIC_VECTOR (1 downto 0);
-signal Piso_Deseado_ABLOQ: STD_LOGIC_VECTOR (1 downto 0);
+signal Piso_Deseado_BFSM: STD_LOGIC_VECTOR (1 downto 0);--Antiguo ABLOQ
+signal Piso_Deseado_AFSM: STD_LOGIC_VECTOR (1 downto 0);
 signal Piso_Actual_BFSM: STD_LOGIC_VECTOR (1 downto 0);
 signal Piso_Actual_AFSM: STD_LOGIC_VECTOR (1 downto 0);
 signal Piso_Actual_LED: STD_LOGIC_VECTOR (6 downto 0);
@@ -90,32 +91,32 @@ begin
 ---------------------------------------------------
 ---CONEXIONES
 ---------------------------------------------------
-	Inst_clk_divider: clk_divider PORT MAP(
+Inst_clk_Divider: clk_divider PORT MAP(
 		clk_in =>clk,
 		reset_clk =>reset,
 		clk_out => clk_1s
 	);
 ---------------------------------------------------	
-	Inst_decodificador_PA: decodificador PORT MAP(
+Inst_Decodificador_PA: decodificador PORT MAP(
 		code =>Piso_Actual_AFSM ,
 		led => Piso_Actual_LED
 	);
 ---------------------------------------------------	
-Inst_decodificador_PD: decodificador PORT MAP(
-		code =>Piso_Deseado_ABLOQ ,
+Inst_Decodificador_PD: decodificador PORT MAP(
+		code =>Piso_Deseado_AFSM ,
 		led => Piso_Deseado_LED
 	);
 ---------------------------------------------------	
-Inst_codificador_PD: codificador PORT MAP(
+Inst_Codificador_PD: codificador PORT MAP(
 		cod_in =>Piso_Deseado ,		
 		cod_out =>Piso_Deseado_BBLOQ ,
-		CLK=> CLK
+		CLK=> clk
 	);
 ---------------------------------------------------	
-Inst_codificador_PA: codificador PORT MAP(
+Inst_Codificador_PA: codificador PORT MAP(
 		cod_in =>Piso_Actual_Sensor ,
 		cod_out =>Piso_Actual_BFSM,
-		CLK=> CLK
+		CLK=> clk
 	);	
 ---------------------------------------------------
 
@@ -123,24 +124,24 @@ Inst_BloqueadorPDeseado: BloqueadorPDeseado PORT MAP(
 		clk => clk ,
 		Enable =>Enable_i ,
 		Piso_Deseado_in =>Piso_Deseado_BBLOQ ,
-		Piso_Deseado_out => Piso_Deseado_ABLOQ
+		Piso_Deseado_out => Piso_Deseado_BFSM
 	);
 ---------------------------------------------------
 	
 Inst_MaquinaDeEstados: MaquinaDeEstados PORT MAP(
 		clk_Maq =>clk_1s ,
 		reset => reset,
-		Piso_Deseado => Piso_Deseado_ABLOQ ,
+		Piso_Deseado_in => Piso_Deseado_BFSM  ,
+		Piso_Deseado_out => Piso_Deseado_AFSM ,
 		Piso_Actual_in => Piso_Actual_BFSM ,
 		Piso_Actual_out => Piso_Actual_AFSM,
 		Puerta =>Puerta ,
 		Motor => Motor ,
 		EnablePDeseado =>Enable_i 
 	);
-
 	
 ---------------------------------------------------
-Inst_DecodificadorPD: DecodificadorPD PORT MAP(
+Inst_GestionDisplays: ModuloDisplay PORT MAP(
 		clk => clk,
 		Enable_Display => Enable_Display ,
 		SenalPisoActual => Piso_Actual_LED  ,
