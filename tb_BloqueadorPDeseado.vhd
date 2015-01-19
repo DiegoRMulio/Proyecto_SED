@@ -53,34 +53,30 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-	
-     Enable <='0';
-	  Piso_Deseado_in<="10";
-     wait for clk_period*3;
 		Enable <='1';
 		Piso_Deseado_in<="10";
-	  wait for clk_period*2;
-		Enable <='0';
+		wait for clk_period*2;
 		Piso_Deseado_in<="00";
-      wait for clk_period*3;
-		Enable <='1';
+		wait for clk_period*2;    
+		Piso_Deseado_in<="10";
+		wait for clk_period;
+		Enable <='0';
+		wait for clk_period*2;		
 		Piso_Deseado_in<="11";
 		wait for clk_period*3;
-		Enable <='0';
+		Enable <='1';		
+		wait for clk_period*3;
 		Piso_Deseado_in<="00";
 		wait for clk_period*3;
-		Enable <='0';
 		Piso_Deseado_in<="01";
 		wait for clk_period*3;
-		Enable <='0';
 		Piso_Deseado_in<="10";
+		wait for clk_period;
+		Enable <='0';
 		wait for clk_period*3;
 		Enable <='0';
 		Piso_Deseado_in<="11";
 		wait for clk_period*3;
-      -- insert stimulus here 
-
-      wait;
-   end process;
-
+	wait;
+  end process;
 END;

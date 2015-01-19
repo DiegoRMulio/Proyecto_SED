@@ -16,7 +16,7 @@ end ModuloDisplay;
 
 architecture Behavioral of ModuloDisplay is
 
-signal CTR : STD_LOGIC_VECTOR(12 downto 0);
+signal CTR : STD_LOGIC_VECTOR(12 downto 0):= "0000000000000";--Originalmente sin inicializar
 signal Enable_Display_sig: STD_LOGIC_VECTOR(3 downto 0) := "1110";
 begin			
   Process (CLK)

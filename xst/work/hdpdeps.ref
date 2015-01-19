@@ -13,59 +13,59 @@ FL "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/
 FL "C:/Users/Daniel/Dropbox/Windows 7/Trabajo SED/Version a 27-11-2014/Ascensor/Ascensor/MaquinaDeEstados.vhd" 2014/12/11.11:24:20 P.15xf
 FL C:/Users/Diego/Desktop/Ascensor/clk_divider.vhd 2014/12/24.09:59:46 P.15xf
 FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.vhd 2015/01/19.00:00:06 P.15xf
-EN work/Ascensor 1421672695 \
+EN work/Ascensor 1421680147 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/Ascensor/Behavioral 1421672696 \
+AR work/Ascensor/Behavioral 1421680148 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.vhd \
-      EN work/Ascensor 1421672695 CP clk_divider CP decodificador CP codificador \
+      EN work/Ascensor 1421680147 CP clk_divider CP decodificador CP codificador \
       CP BloqueadorPDeseado CP MaquinaDeEstados CP ModuloDisplay
 FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/BloqueadorPDeseado.vhd 2015/01/19.13:39:59 P.15xf
-EN work/BloqueadorPDeseado 1421672689 \
+EN work/BloqueadorPDeseado 1421680141 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/BloqueadorPDeseado.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/BloqueadorPDeseado/Behavioral 1421672690 \
+AR work/BloqueadorPDeseado/Behavioral 1421680142 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/BloqueadorPDeseado.vhd \
-      EN work/BloqueadorPDeseado 1421672689
-FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/clk_divider.vhd 2015/01/19.14:04:35 P.15xf
-EN work/clk_divider 1421672683 \
+      EN work/BloqueadorPDeseado 1421680141
+FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/clk_divider.vhd 2015/01/19.16:08:32 P.15xf
+EN work/clk_divider 1421680135 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/clk_divider.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
-AR work/clk_divider/Behavioral 1421672684 \
+AR work/clk_divider/Behavioral 1421680136 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/clk_divider.vhd \
-      EN work/clk_divider 1421672683
+      EN work/clk_divider 1421680135
 FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/codificador.vhd 2015/01/19.13:13:24 P.15xf
-EN work/codificador 1421672687 \
+EN work/codificador 1421680139 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/codificador.vhd \
       PB ieee/std_logic_1164 1335251622
-AR work/codificador/dataflow 1421672688 \
+AR work/codificador/dataflow 1421680140 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/codificador.vhd \
-      EN work/codificador 1421672687
+      EN work/codificador 1421680139
 FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/Decodificador.vhd 2015/01/10.16:51:07 P.15xf
-EN work/decodificador 1421672685 \
+EN work/decodificador 1421680137 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/Decodificador.vhd \
       PB ieee/std_logic_1164 1335251622
-AR work/decodificador/dataflow 1421672686 \
+AR work/decodificador/dataflow 1421680138 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/Decodificador.vhd \
-      EN work/decodificador 1421672685
+      EN work/decodificador 1421680137
 FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/MaquinaDeEstados.vhd 2015/01/19.13:56:39 P.15xf
-EN work/MaquinaDeEstados 1421672691 \
+EN work/MaquinaDeEstados 1421680143 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/MaquinaDeEstados.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/MaquinaDeEstados/Behavioral 1421672692 \
+AR work/MaquinaDeEstados/Behavioral 1421680144 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/MaquinaDeEstados.vhd \
-      EN work/MaquinaDeEstados 1421672691
+      EN work/MaquinaDeEstados 1421680143
 FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/ModuloDisplay.vhd 2015/01/18.23:58:17 P.15xf
-EN work/ModuloDisplay 1421672693 \
+EN work/ModuloDisplay 1421680145 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/ModuloDisplay.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/ModuloDisplay/Behavioral 1421672694 \
+AR work/ModuloDisplay/Behavioral 1421680146 \
       FL C:/Users/Diego/Documents/GitHub/Proyecto_SED/ModuloDisplay.vhd \
-      EN work/ModuloDisplay 1421672693
+      EN work/ModuloDisplay 1421680145
 FL C:/Users/sed/Desktop/Ascensor/Ascensor/Ascensor.vhd 2014/11/27.19:05:10 P.15xf
 FL C:/Users/sed/Desktop/Ascensor/Ascensor/clk_divider.vhd 2014/11/27.18:07:44 P.15xf
 FL C:/Users/sed/Desktop/Ascensor/Ascensor/codificador.vhd 2014/11/27.18:56:49 P.15xf

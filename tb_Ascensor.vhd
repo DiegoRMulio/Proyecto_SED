@@ -1,8 +1,7 @@
---------------------------------------------------------------------------------
-
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
+ 
 ENTITY tb_Ascensor IS
 END tb_Ascensor;
  
@@ -37,7 +36,7 @@ ARCHITECTURE behavior OF tb_Ascensor IS
    signal Motor : std_logic_vector(1 downto 0);
 
    -- Clock period definitions
-   constant clk_period : time := 10 ns;
+   constant clk_period : time := 50 us;
  
 BEGIN
  
@@ -65,34 +64,31 @@ BEGIN
 
    -- Stimulus process
    stim_proc: process
-   begin				
+   begin		
 			reset<='1';
-			wait for clk_period;
+			wait for 1000 ms;--clk_period;
 			reset<='0';
 			Piso_Deseado<="1000";
 			Piso_Actual_Sensor<="0001";
-			wait for 300 ns;
+			wait for 3000 ms;
 			Piso_Deseado<="1000";
 			Piso_Actual_Sensor<="0010";
-			wait for 300 ns;
+			wait for 3000 ms;
 			Piso_Deseado<="1000";
 			Piso_Actual_Sensor<="0100";
-			wait for 300 ns;
+			wait for 3000 ms;
 			Piso_Deseado<="1000";
 			Piso_Actual_Sensor<="1000";
-			wait for 600 ns ;
+			wait for 6000 ms ;
 			
 			--Empieza a bajar
 			Piso_Deseado<="0010";
-			wait for 300 ns;
+			wait for 3000 ms;
 			Piso_Actual_Sensor<="0100";
-			wait for 300 ns ;
+			wait for 3000 ms ;
 			Piso_Deseado<="0010";
 			Piso_Actual_Sensor<="0010";
-			wait for 300 ns ;
-			
-      wait;
-      -- insert stimulus here 
+			wait for 3000 ms ;
 
       wait;
    end process;

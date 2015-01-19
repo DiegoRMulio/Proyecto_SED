@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.42 secs
+Total CPU time to Xst completion: 0.41 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.42 secs
+Total CPU time to Xst completion: 0.41 secs
  
 --> Reading design: Ascensor.prj
 
@@ -593,11 +593,11 @@ Offset:              6.280ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 18.41 secs
+Total CPU time to Xst completion: 18.71 secs
  
 --> 
 
-Total memory usage is 244924 kilobytes
+Total memory usage is 244908 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)

@@ -27,8 +27,9 @@ Compiling architecture behavioral of entity ModuloDisplay [modulodisplay_default
 Compiling architecture behavioral of entity Ascensor [ascensor_default]
 Compiling architecture behavior of entity tb_ascensor
 Time Resolution for simulation is 1ns.
+Waiting for 1 sub-compilation(s) to finish...
 WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: El sistema no puede encontrar la ruta especificada, "isim\tb_Ascensor_isim_beh.exe.sim\libPortability.dll".
 Compiled 20 VHDL Units
 Built simulation executable C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor_isim_beh.exe
-Fuse Memory Usage: 35008 KB
-Fuse CPU Usage: 2156 ms
+Fuse Memory Usage: 34964 KB
+Fuse CPU Usage: 2202 ms

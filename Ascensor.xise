@@ -53,12 +53,6 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="55"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="55"/>
     </file>
-    <file xil_pn:name="tb_MaquinaDeEstados.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="68"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="68"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="68"/>
-    </file>
     <file xil_pn:name="Ascensor.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
@@ -76,17 +70,23 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
-    <file xil_pn:name="TBDecodificadorPD.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="tb_Gestion_Display.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="127"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="127"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="127"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="136"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="136"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="136"/>
     </file>
     <file xil_pn:name="tb_Ascensor.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="134"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="134"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="134"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="151"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="151"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="151"/>
+    </file>
+    <file xil_pn:name="tb_MaquinaDeEstados.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="152"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="152"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="152"/>
     </file>
   </files>
 

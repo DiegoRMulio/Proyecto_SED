@@ -20,7 +20,7 @@ begin
             temporal <= '0';
             counter := 0;
         elsif rising_edge(clk_in) then
-            if (counter = 1000) then
+            if (counter = 10) then
 				-- Poner 10 para testbench
 				-- 24999999 para dividir a 1HZ
                 temporal <= NOT(temporal);

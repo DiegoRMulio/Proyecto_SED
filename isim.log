@@ -8,19 +8,5 @@ Time resolution is 1 ns
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-at 5 ns(1), Instance /tb_ascensor/uut/Inst_ModuloDisplay/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 8764930 ns : File "C:/Users/Diego/Documents/GitHub/Proyecto_SED/clk_divider.vhd" Line 19
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 3292035 ns : File "C:/Users/Diego/Documents/GitHub/Proyecto_SED/clk_divider.vhd" Line 19
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 6685025 ns : File "C:/Users/Diego/Documents/GitHub/Proyecto_SED/clk_divider.vhd" Line 19
+# run 20us
+# run 20s

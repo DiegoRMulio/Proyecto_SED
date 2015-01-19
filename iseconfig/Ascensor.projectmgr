@@ -11,7 +11,7 @@
       <SelectedItems>
          <SelectedItem>Ascensor - Behavioral (C:/Users/Diego/Documents/GitHub/Proyecto_SED/Ascensor.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000232000000020000000000000000000000000200000064ffffffff000000810000000300000002000002320000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
@@ -23,13 +23,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000228000000010000000100000000000000000000000064ffffffff000000810000000000000001000002280000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -64,25 +64,32 @@
       <SelectedItems>
          <SelectedItem>Design Summary/Reports</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >8</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000217000000010000000100000000000000000000000064ffffffff000000810000000000000001000002170000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Design Summary/Reports</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff0000000000000002000000e0000000c701000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <SourceProcessView>000000ff00000000000000020000011a000000a401000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/tb_Ascensor - behavior C:|Users|Diego|Documents|GitHub|Proyecto_SED|tb_Ascensor.vhd/uut - Ascensor - Behavioral</ClosedNode>
+         <ClosedNode>/tb_BloqueadorPDeseado - behavior C:|Users|Diego|Documents|GitHub|Proyecto_SED|tb_BloqueadorPDeseado.vhd</ClosedNode>
+         <ClosedNode>/tb_Gestion_Display - behavior C:|Users|Diego|Documents|GitHub|Proyecto_SED|tb_Gestion_Display.vhd</ClosedNode>
+         <ClosedNode>/tb_MaquinaDeEstados - behavior C:|Users|Diego|Documents|GitHub|Proyecto_SED|tb_MaquinaDeEstados.vhd</ClosedNode>
+         <ClosedNode>/tb_clk_divider - behavior C:|Users|Diego|Documents|GitHub|Proyecto_SED|tb_clk_divider.vhd</ClosedNode>
          <ClosedNode>/tb_clk_divider - behavior C:|Users|sed|Desktop|Ascensor|Ascensor|tb_clk_divider.vhd</ClosedNode>
+         <ClosedNode>/tb_codificador - behavior C:|Users|Diego|Documents|GitHub|Proyecto_SED|tb_codificador.vhd</ClosedNode>
+         <ClosedNode>/tb_decodificador - behavior C:|Users|Diego|Documents|GitHub|Proyecto_SED|tb_decodificador.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>tb_Ascensor - behavior (C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000246000000020000000000000000000000000200000064ffffffff000000810000000300000002000002460000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a1000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a10000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>tb_Ascensor - behavior (C:/Users/Diego/Documents/GitHub/Proyecto_SED/tb_Ascensor.vhd)</CurrentItem>
    </ItemView>
@@ -92,13 +99,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000228000000010000000100000000000000000000000064ffffffff000000810000000000000001000002280000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -109,7 +116,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000228000000010000000100000000000000000000000064ffffffff000000810000000000000001000002280000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001da000000010000000100000000000000000000000064ffffffff000000810000000000000001000001da0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
