@@ -35,7 +35,8 @@ begin
 	end if;
 end process;
 ----LOGICA DEL ESTADO SIGUIENTE---
-process(Q_bus,reset,Piso_Deseado_in,Piso_Actual_in)
+process(clk_Maq,Q_bus,reset,Piso_Deseado_in,Piso_Actual_in)
+--variable salida_ant: std_logic_vector(3 downto 0);
 begin
 	CASE (Q_BUS) is
 		when S0 =>
@@ -43,7 +44,7 @@ begin
 					D_bus<=S1;
 				elsif reset = '1' then
 					D_bus <= S0;
-				end if;
+				end if;				
 		when S1 =>
 				if Piso_Deseado_in < Piso_Actual_in then
 					D_bus <= S2;
@@ -51,21 +52,18 @@ begin
 					D_bus <= S3;
 				elsif Piso_Deseado_in = Piso_Actual_in then
 					D_bus <=S4;
+--				elsif reset='1' then
+--					D_bus <= S0;
 				else
 					D_bus <= S1;
 				end if;
-				
---				if reset = '1' then
---					D_bus <= S0;
---				end if;
-				
 		when S2 =>
 					D_bus <= S1;
-	
 		when S3 =>
 					D_bus <= S1;
 		when S4 =>
 					D_bus <= S1;
+					
 	end case;
 end process;
 
@@ -76,14 +74,15 @@ end process;
 					"0010" when S2,
 					"0100" when S3,
 					"1001" when S4,
-					salidas when S1;
-					
+					 salidas when others;			
+	
+		
 	Puerta <= salidas(3);
 	Motor <= salidas(2) & salidas (1);	
 	EnablePDeseado <= salidas(0);
 	Piso_Actual_out <= Piso_Actual_in; 
 	Piso_Deseado_out <= Piso_Deseado_in;
-
+	
 end Behavioral;
 
 

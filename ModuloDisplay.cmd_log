@@ -1,0 +1,1 @@
+vhdtdtfi -prj Ascensor -o C:/Users/Diego/Documents/GitHub/Proyecto_SED/ModuloDisplay.vhi -module ModuloDisplay -template D:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ModuloDisplay.vhd 

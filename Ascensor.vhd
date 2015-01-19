@@ -8,7 +8,7 @@ entity Ascensor is
            reset : in  STD_LOGIC;
            Piso_Deseado : in  STD_LOGIC_VECTOR(3 downto 0);
 			  Piso_Actual_Sensor: in  STD_LOGIC_VECTOR(3 downto 0);
-           Enable_Display: inout STD_LOGIC_VECTOR (3 downto 0);
+           Enable_Display: out STD_LOGIC_VECTOR (3 downto 0);
 			  LED_Display: out STD_LOGIC_VECTOR (6 downto 0);
            Puerta : out  STD_LOGIC;
            Motor : out  STD_LOGIC_VECTOR(1 downto 0)
@@ -64,12 +64,12 @@ END COMPONENT;
 		);
 	END COMPONENT;
 ---------------------------------------------------
-	COMPONENT ModuloDisplay
+COMPONENT ModuloDisplay
 	PORT(
 		clk : IN std_logic;
 		SenalPisoActual : IN std_logic_vector(6 downto 0);
-		SenalPisoDeseado : IN std_logic_vector(6 downto 0);    
-		Enable_Display : INOUT std_logic_vector(3 downto 0);      
+		SenalPisoDeseado : IN std_logic_vector(6 downto 0);          
+		Enable_Display : OUT std_logic_vector(3 downto 0);
 		LED : OUT std_logic_vector(6 downto 0)
 		);
 	END COMPONENT;
@@ -141,11 +141,11 @@ Inst_MaquinaDeEstados: MaquinaDeEstados PORT MAP(
 	);
 	
 ---------------------------------------------------
-Inst_GestionDisplays: ModuloDisplay PORT MAP(
+Inst_ModuloDisplay: ModuloDisplay PORT MAP(
 		clk => clk,
-		Enable_Display => Enable_Display ,
 		SenalPisoActual => Piso_Actual_LED  ,
 		SenalPisoDeseado => Piso_Deseado_LED ,
+		Enable_Display =>Enable_Display  ,
 		LED => LED_Display
 	);
 

@@ -1,0 +1,8 @@
+vhdl work "ModuloDisplay.vhd"
+vhdl work "MaquinaDeEstados.vhd"
+vhdl work "Decodificador.vhd"
+vhdl work "codificador.vhd"
+vhdl work "clk_divider.vhd"
+vhdl work "BloqueadorPDeseado.vhd"
+vhdl work "Ascensor.vhd"
+vhdl work "tb_Ascensor.vhd"

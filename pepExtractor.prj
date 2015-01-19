@@ -1,1 +1,7 @@
+work	"Ascensor.vhd"
+work	"BloqueadorPDeseado.vhd"
+work	"Decodificador.vhd"
 work	"MaquinaDeEstados.vhd"
+work	"ModuloDisplay.vhd"
+work	"clk_divider.vhd"
+work	"codificador.vhd"
