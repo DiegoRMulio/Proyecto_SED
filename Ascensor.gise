@@ -154,6 +154,10 @@
     <transform xil_pn:end_ts="1421694282" xil_pn:in_ck="-8086569019372763641" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1421694282">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Ascensor.vhd"/>
       <outfile xil_pn:name="BloqueadorPDeseado.vhd"/>
       <outfile xil_pn:name="Decodificador.vhd"/>
@@ -184,6 +188,11 @@
     <transform xil_pn:end_ts="1421694289" xil_pn:in_ck="-8086569019372763641" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1421694289">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Ascensor.vhd"/>
       <outfile xil_pn:name="BloqueadorPDeseado.vhd"/>
       <outfile xil_pn:name="Decodificador.vhd"/>
@@ -202,7 +211,10 @@
     <transform xil_pn:end_ts="1421694300" xil_pn:in_ck="-8086569019372763641" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4608289371813104758" xil_pn:start_ts="1421694289">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -214,6 +226,7 @@
     <transform xil_pn:end_ts="1421694990" xil_pn:in_ck="-4483497831436534970" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="755871807397619100" xil_pn:start_ts="1421694989">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -248,13 +261,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1421680153" xil_pn:in_ck="-27393051616551258" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-4105999831304057508" xil_pn:start_ts="1421680121">
+    <transform xil_pn:end_ts="1421770622" xil_pn:in_ck="-27393051616551258" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-4105999831304057508" xil_pn:start_ts="1421770597">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="Ascensor.lso"/>
@@ -275,21 +286,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1421680171" xil_pn:in_ck="5215126919811214478" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4217152162798897786" xil_pn:start_ts="1421680153">
+    <transform xil_pn:end_ts="1421770638" xil_pn:in_ck="5215126919811214478" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4217152162798897786" xil_pn:start_ts="1421770622">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Ascensor.bld"/>
       <outfile xil_pn:name="Ascensor.ngd"/>
       <outfile xil_pn:name="Ascensor_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1421680184" xil_pn:in_ck="6883016434764199439" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3855906223012716089" xil_pn:start_ts="1421680171">
+    <transform xil_pn:end_ts="1421770648" xil_pn:in_ck="6883016434764199439" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3855906223012716089" xil_pn:start_ts="1421770638">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Ascensor.pcf"/>
@@ -302,11 +310,10 @@
       <outfile xil_pn:name="Ascensor_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1421680209" xil_pn:in_ck="-4363390439764016088" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3333849164707216606" xil_pn:start_ts="1421680184">
+    <transform xil_pn:end_ts="1421770671" xil_pn:in_ck="-4363390439764016088" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3333849164707216606" xil_pn:start_ts="1421770648">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Ascensor.ncd"/>
       <outfile xil_pn:name="Ascensor.pad"/>
       <outfile xil_pn:name="Ascensor.par"/>
@@ -318,11 +325,9 @@
       <outfile xil_pn:name="Ascensor_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1421680232" xil_pn:in_ck="3466110131952434209" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="-2672950586390118423" xil_pn:start_ts="1421680209">
+    <transform xil_pn:end_ts="1421770691" xil_pn:in_ck="3466110131952434209" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="-2672950586390118423" xil_pn:start_ts="1421770671">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Ascensor.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="ascensor.bgn"/>
@@ -332,17 +337,15 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1421672774" xil_pn:in_ck="5083457540391679499" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1421672768">
+    <transform xil_pn:end_ts="1421769851" xil_pn:in_ck="5083457540391679499" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="-6745644827150672321" xil_pn:start_ts="1421769848">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1421680209" xil_pn:in_ck="8082529345484803979" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1421680202">
+    <transform xil_pn:end_ts="1421770671" xil_pn:in_ck="8082529345484803979" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1421770664">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Ascensor.twr"/>
       <outfile xil_pn:name="Ascensor.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

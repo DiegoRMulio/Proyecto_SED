@@ -45,13 +45,13 @@ Setup/Hold to clock clk
                      |Max Setup to|Max Hold to |                  | Clock  |
 Source               | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ---------------------+------------+------------+------------------+--------+
-Piso_Actual_Sensor<0>|    2.937(R)|    0.957(R)|clk_BUFGP         |   0.000|
-Piso_Actual_Sensor<1>|    2.790(R)|   -0.017(R)|clk_BUFGP         |   0.000|
-Piso_Actual_Sensor<2>|    1.694(R)|    0.787(R)|clk_BUFGP         |   0.000|
-Piso_Actual_Sensor<3>|    1.847(R)|   -0.169(R)|clk_BUFGP         |   0.000|
-Piso_Deseado<0>      |    1.945(R)|    0.741(R)|clk_BUFGP         |   0.000|
-Piso_Deseado<1>      |    2.114(R)|    0.200(R)|clk_BUFGP         |   0.000|
-Piso_Deseado<2>      |    1.941(R)|    0.794(R)|clk_BUFGP         |   0.000|
+Piso_Actual_Sensor<0>|    2.608(R)|    0.934(R)|clk_BUFGP         |   0.000|
+Piso_Actual_Sensor<1>|    2.411(R)|   -0.113(R)|clk_BUFGP         |   0.000|
+Piso_Actual_Sensor<2>|    1.694(R)|    0.794(R)|clk_BUFGP         |   0.000|
+Piso_Actual_Sensor<3>|    1.847(R)|   -0.170(R)|clk_BUFGP         |   0.000|
+Piso_Deseado<0>      |    2.809(R)|    0.720(R)|clk_BUFGP         |   0.000|
+Piso_Deseado<1>      |    2.910(R)|   -0.113(R)|clk_BUFGP         |   0.000|
+Piso_Deseado<2>      |    1.941(R)|    0.594(R)|clk_BUFGP         |   0.000|
 Piso_Deseado<3>      |    2.072(R)|   -0.320(R)|clk_BUFGP         |   0.000|
 ---------------------+------------+------------+------------------+--------+
 
@@ -64,13 +64,13 @@ Enable_Display<0>|    8.361(R)|clk_BUFGP         |   0.000|
 Enable_Display<1>|    7.625(R)|clk_BUFGP         |   0.000|
 Enable_Display<2>|    7.625(R)|clk_BUFGP         |   0.000|
 Enable_Display<3>|    8.255(R)|clk_BUFGP         |   0.000|
-LED_Display<0>   |    8.849(R)|clk_BUFGP         |   0.000|
-LED_Display<1>   |    8.953(R)|clk_BUFGP         |   0.000|
-LED_Display<2>   |    8.764(R)|clk_BUFGP         |   0.000|
-LED_Display<3>   |    8.958(R)|clk_BUFGP         |   0.000|
-LED_Display<4>   |    8.638(R)|clk_BUFGP         |   0.000|
-LED_Display<5>   |    8.673(R)|clk_BUFGP         |   0.000|
-LED_Display<6>   |    8.840(R)|clk_BUFGP         |   0.000|
+LED_Display<0>   |    8.548(R)|clk_BUFGP         |   0.000|
+LED_Display<1>   |    8.952(R)|clk_BUFGP         |   0.000|
+LED_Display<2>   |    8.984(R)|clk_BUFGP         |   0.000|
+LED_Display<3>   |    8.642(R)|clk_BUFGP         |   0.000|
+LED_Display<4>   |    8.636(R)|clk_BUFGP         |   0.000|
+LED_Display<5>   |    8.936(R)|clk_BUFGP         |   0.000|
+LED_Display<6>   |    9.664(R)|clk_BUFGP         |   0.000|
 -----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -78,11 +78,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.039|         |         |         |
+clk            |    6.215|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Jan 19 16:10:07 2015 
+Analysis completed Tue Jan 20 17:17:49 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -46,35 +46,61 @@ begin
 					D_bus <= S0;
 				end if;				
 		when S1 =>
-				if Piso_Deseado_in < Piso_Actual_in then
+				if Piso_Deseado_in < Piso_Actual_in AND reset='0' then
 					D_bus <= S2;
-				elsif Piso_Deseado_in > Piso_Actual_in then
+					salidas <= "0010";
+				elsif Piso_Deseado_in > Piso_Actual_in AND reset='0' then
 					D_bus <= S3;
-				elsif Piso_Deseado_in = Piso_Actual_in then
+					salidas <= "0100";
+				elsif Piso_Deseado_in = Piso_Actual_in AND reset='0' then
 					D_bus <=S4;
---				elsif reset='1' then
---					D_bus <= S0;
+					salidas <= "1001";
+				elsif reset='1' then
+					D_bus <= S0;
+					salidas <= 	"1001";
 				else
 					D_bus <= S1;
 				end if;
 		when S2 =>
 					D_bus <= S1;
+					salidas <= 	"0010";
+					
+					if reset='1' then
+					D_bus <= S0;
+					salidas <= 	"1001";
+					end if;
+
+					
 		when S3 =>
 					D_bus <= S1;
+					salidas <= 	"0100";
+					
+					if reset='1' then
+					D_bus <= S0;
+					salidas <= 	"1001";
+					end if;
+					
 		when S4 =>
 					D_bus <= S1;
+					salidas <= 	"1001";
+					
+					if reset='1' then
+					D_bus <= S0;
+					salidas <= 	"1001";
+					end if;
+
 					
 	end case;
 end process;
 
 ------LOGICA DE LA SALIDA-------
 
-	with Q_bus select
-	salidas <= 	"1001" when S0,
-					"0010" when S2,
-					"0100" when S3,
-					"1001" when S4,
-					 salidas when others;			
+--	with Q_bus select
+--	salidas <= 	"1001" when S0,
+--					"0010" when S2,
+--					"0100" when S3,
+--					"1001" when S4,
+--					 salidas when others;			
 	
 		
 	Puerta <= salidas(3);
